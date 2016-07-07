@@ -1,11 +1,16 @@
+@import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,400italic";
+@import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic|Roboto:400,700,400italic";
 .wForm {
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  padding: 2rem; }
 
 .wForm .wFormTitle {
   text-align: center; }
 
 .wForm label {
   color: #545455;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 1.125rem; }
 
 .wForm input[type=text] {

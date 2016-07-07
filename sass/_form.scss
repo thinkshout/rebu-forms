@@ -1,5 +1,6 @@
 .wForm {
   background: $form-bg-color;
+  padding: 2rem;
 }
 
 // Form title
@@ -10,6 +11,8 @@
 // Label
 .wForm label {
   color: $label-color;
+  font-family: $roboto;
+  font-weight: $bold;
   font-size: rem(18);
 }
 
