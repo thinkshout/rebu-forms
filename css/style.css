@@ -7,7 +7,7 @@
 .wForm .wFormTitle {
   text-align: center; }
 
-.wForm label {
+.wForm label.preField {
   color: #545455;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
