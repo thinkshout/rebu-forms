@@ -1,3 +1,26 @@
-.wForm .section {
+.wForm .section.group {
   margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.wForm .actions {
+  margin-top: 6rem;
+}
+
+
+.third {
+  float: left;
+  margin-right: 2%;
+  width: 32%;
+
+  &.last {
+    float: right;
+    margin-right: 2px;
+  }
+}
+
+.two-thirds {
+  float: left;
+  margin-right: 2%;
+  width: 64%;
 }

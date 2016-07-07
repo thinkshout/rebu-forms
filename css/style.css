@@ -2,20 +2,40 @@
 @import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic|Roboto:400,700,400italic";
 .wFormContainer {
   border: none;
-  box-shadow: 0px 2px 6px 0px rgba(137, 137, 137, 0.5); }
+  box-shadow: 0px 2px 6px 0px rgba(137, 137, 137, 0.5);
+  max-width: 44.25rem;
+  margin: 0 auto; }
 
 .wForm {
   background: #F2F2F2;
-  padding: 3rem; }
+  font-family: "Roboto", sans-serif;
+  padding: 3rem 3rem 0.5rem 3rem; }
+
+.wForm .oneField {
+  margin-bottom: 1rem; }
 
 .wForm .wFormTitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.625rem;
+  color: #545455;
+  margin-bottom: 3rem;
   text-align: center; }
 
-.wForm label.preField {
+.wForm label.preField,
+.wForm label.postField {
   color: #545455;
-  font-family: "Roboto", sans-serif;
+  display: inline-block;
   font-weight: 700;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem; }
+  .wForm label.preField.reqMark::after,
+  .wForm label.postField.reqMark::after {
+    color: #EF4044;
+    content: ' *';
+    font-weight: 400; }
+
+.wForm .inputWrapper {
+  width: 100%; }
 
 .wForm input[type=text] {
   background: #FFFFFF;
@@ -26,12 +46,143 @@
   font-weight: bold;
   padding: 1rem;
   outline: none;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  -webkit-transition: border 0.1s;
+  -moz-transition: border 0.1s;
+  transition: border 0.1s; }
+  .wForm input[type=text]::-webkit-input-placeholder {
+    font-size: 1.125rem;
+    font-weight: 700; }
+  .wForm input[type=text]::-moz-placeholder {
+    font-size: 1.125rem;
+    font-weight: 700; }
+  .wForm input[type=text]:-moz-placeholder {
+    font-size: 1.125rem;
+    font-weight: 700; }
+  .wForm input[type=text]:-ms-input-placeholder {
+    font-size: 1.125rem;
+    font-weight: 700; }
   .wForm input[type=text]:focus {
     border: 3px solid #7AC143;
-    box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5); }
+    box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    -webkit-transition: border 0.1s;
+    -moz-transition: border 0.1s;
+    transition: border 0.1s; }
 
-.wForm .section {
-  margin-bottom: 4rem; }
+.wForm .oneChoice {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+  .wForm .oneChoice label.postField {
+    padding-left: 2.2rem;
+    position: relative; }
+    .wForm .oneChoice label.postField::before {
+      background: #FFFFFF;
+      border: 0.125rem solid #979797;
+      content: '';
+      display: block;
+      left: 0;
+      height: 1.375rem;
+      padding: 0.05rem;
+      position: absolute;
+      top: -0.25rem;
+      width: 1.375rem; }
+  .wForm .oneChoice input[type="checkbox"] {
+    display: none; }
+    .wForm .oneChoice input[type="checkbox"]:checked + label:before {
+      background: #7AC143; }
+
+.selectWrapper {
+  background: #FFFFFF url("../img/select-arrow.png") 97% center no-repeat;
+  border: 0.0625rem solid #979797;
+  position: relative; }
+  .selectWrapper:hover {
+    border: 3px solid #7AC143;
+    box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    -webkit-transition: border 0.1s;
+    -moz-transition: border 0.1s;
+    transition: border 0.1s; }
+  .selectWrapper select {
+    background: transparent;
+    border: none;
+    color: #545455;
+    font-size: 1.3125rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; }
+    .selectWrapper select:hover {
+      padding-right: 0.5rem; }
+
+.wForm input[type=submit].primaryAction {
+  background: #7AC143;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #FFFFFF;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12.875rem;
+  height: 4.125rem; }
+
+.wForm form .errFld {
+  border: none; }
+
+.wForm form .errMsg {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 0.5rem; }
+
+.supportInfo {
+  background: #F2F2F2;
+  margin: 0;
+  padding: 0 0 3rem 0;
+  text-align: center; }
+  .supportInfo a {
+    color: #9B9B9B;
+    font-size: 1.0625rem;
+    font-style: italic;
+    text-decoration: none; }
+    .supportInfo a:hover {
+      text-decoration: underline; }
+
+.wForm .section.group {
+  margin-bottom: 4rem;
+  overflow: hidden; }
+
+.wForm .actions {
+  margin-top: 6rem; }
+
+.third {
+  float: left;
+  margin-right: 2%;
+  width: 32%; }
+  .third.last {
+    float: right;
+    margin-right: 2px; }
+
+.two-thirds {
+  float: left;
+  margin-right: 2%;
+  width: 64%; }
 
 /*# sourceMappingURL=style.css.map */

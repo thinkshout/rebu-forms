@@ -1,24 +1,48 @@
 .wFormContainer {
   border: none;
   box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50);
+  max-width: rem(708);
+  margin: 0 auto;
 }
 
 .wForm {
   background: $form-bg-color;
-  padding: 3rem;
+  font-family: $roboto;
+  padding: 3rem 3rem 0.5rem 3rem;
+}
+
+.wForm .oneField {
+  margin-bottom: 1rem;
 }
 
 // Form title
 .wForm .wFormTitle {
+  font-family: $robotoCondensed;
+  font-size: rem(26);
+  color: $form-title-color;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 // Label
-.wForm label.preField {
+.wForm label.preField,
+.wForm label.postField {
   color: $label-color;
-  font-family: $roboto;
+  display: inline-block;
   font-weight: $bold;
   font-size: rem(18);
+  margin-bottom: 0.5rem;
+
+  &.reqMark::after {
+    color: $error-color;
+    content: ' *';
+    font-weight: $normal;
+  }
+}
+
+// Input wrapper
+.wForm .inputWrapper {
+  width: 100%;
 }
 
 // Text input
@@ -32,9 +56,130 @@
   padding: 1rem;
   outline: none;
   width: 100%;
+  @include transition(box-shadow 0.2s);
+  @include transition(border 0.1s);
+
+  @include placeholder {
+    font-size: rem(18);
+    font-weight: $bold;
+  }
 
   &:focus {
     border: 3px solid $active-input-border-color;
     box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
+    @include transition(box-shadow 0.2s);
+    @include transition(border 0.1s);
+  }
+}
+
+// Checkboxes
+.wForm .oneChoice {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+  label.postField {
+    padding-left: 2.2rem;
+    position: relative;
+
+    &::before {
+      background: $white;
+      border: rem(2) solid $input-border-color;
+      content: '';
+      display: block;
+      left: 0;
+      height: rem(22);
+      padding: 0.05rem;
+      position: absolute;
+      top: -0.25rem;
+      width: rem(22);
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label:before {
+      background: $button-bg-color;
+    }
+  }
+}
+
+// Select
+.selectWrapper {
+  background: $white url('../img/select-arrow.png') 97% center no-repeat;
+  border: rem(1) solid $input-border-color;
+  position: relative;
+
+  &:hover {
+    border: 3px solid $active-input-border-color;
+    box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
+    @include transition(box-shadow 0.2s);
+    @include transition(border 0.1s);
+  }
+
+  select {
+    background: transparent;
+    border: none;
+    color: $label-color;
+    font-size: rem(21);
+    font-weight: $bold;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    @include appearance(none);
+
+    &:hover {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+
+// Submit button
+.wForm input[type=submit].primaryAction {
+  background: $button-bg-color;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: $white;
+  display: block;
+  font-family: $roboto;
+  font-size: rem(22);
+  font-weight: $bold;
+  margin-left: auto;
+  margin-right: auto;
+  width: rem(206);
+  height: rem(66);
+}
+
+// Errors
+.wForm form .errFld {
+  border: none;
+}
+
+.wForm form .errMsg {
+  font-family: $roboto;
+  font-size: rem(14);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+// Support text
+.supportInfo {
+  background: $form-bg-color;
+  margin: 0;
+  padding: 0 0 3rem 0;
+  text-align: center;
+
+  a {
+    color: $help-text-color;
+    font-size: rem(17);
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
