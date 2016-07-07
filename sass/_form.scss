@@ -1,3 +1,19 @@
 .wForm {
   background: $form-bg-color;
 }
+
+// label
+.wForm input[type=text] {
+  background: $white;
+  border: rem(1) solid $input-border-color;
+  color: $black;
+  display: block;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  &:focus {
+    border: 3px solid $active-input-border-color;
+    box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
+  }
+}
