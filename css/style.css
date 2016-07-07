@@ -1,7 +1,8 @@
 @import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,400italic";
 @import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic|Roboto:400,700,400italic";
 .wFormContainer {
-  border: none; }
+  border: none;
+  box-shadow: 0px 2px 6px 0px rgba(137, 137, 137, 0.5); }
 
 .wForm {
   background: #F2F2F2;
