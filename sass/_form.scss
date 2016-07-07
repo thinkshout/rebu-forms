@@ -2,7 +2,17 @@
   background: $form-bg-color;
 }
 
-// label
+// Form title
+.wForm .wFormTitle {
+  text-align: center;
+}
+
+// Label
+.wForm label {
+  font-size: rem()
+}
+
+// Text input
 .wForm input[type=text] {
   background: $white;
   border: rem(1) solid $input-border-color;
@@ -10,6 +20,7 @@
   display: block;
   font-weight: bold;
   padding: 1rem 2rem;
+  outline: none;
   width: 100%;
 
   &:focus {
