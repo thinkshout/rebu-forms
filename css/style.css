@@ -1,8 +1,11 @@
 @import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,400italic";
 @import "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic|Roboto:400,700,400italic";
+.wFormContainer {
+  border: none; }
+
 .wForm {
   background: #F2F2F2;
-  padding: 2rem; }
+  padding: 3rem; }
 
 .wForm .wFormTitle {
   text-align: center; }
