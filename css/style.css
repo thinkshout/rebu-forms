@@ -34,9 +34,6 @@
     content: ' *';
     font-weight: 400; }
 
-.wForm .inputWrapper {
-  width: 100%; }
-
 .wForm input[type=text] {
   background: #FFFFFF;
   border: 0.0625rem solid #979797;
@@ -184,5 +181,11 @@
   float: left;
   margin-right: 2%;
   width: 64%; }
+
+.half {
+  margin-right: 2%;
+  width: 48%; }
+  .half.last {
+    margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
