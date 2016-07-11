@@ -76,7 +76,7 @@ a {
     font-size: 1.125rem;
     font-style: italic;
     font-weight: 700; }
-  .wForm input[type=text]:hover, .wForm input[type=text]:focus {
+  .wForm input[type=text]:focus {
     border: 3px solid #7AC143;
     box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
     -webkit-transition: box-shadow 0.2s;
@@ -104,28 +104,10 @@ a {
       position: absolute;
       top: -0.25rem;
       width: 1.375rem; }
-  .wForm .oneChoice.checkbox .wForm .oneChoice.radio {
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem; }
-    .wForm .oneChoice.checkbox .wForm .oneChoice.radio label.postField {
-      padding-left: 2.2rem;
-      position: relative; }
-      .wForm .oneChoice.checkbox .wForm .oneChoice.radio label.postField::before {
-        background: #FFFFFF;
-        border: 0.125rem solid #979797;
-        content: '';
-        display: block;
-        left: 0;
-        height: 1.375rem;
-        padding: 0.05rem;
-        position: absolute;
-        top: -0.25rem;
-        width: 1.375rem; }
   .wForm .oneChoice.checkbox input[type="checkbox"] {
     display: none; }
     .wForm .oneChoice.checkbox input[type="checkbox"]:checked + label:before {
-      background: #7AC143; }
+      background: #FFFFFF url("../img/checkbox-bg.png") center center no-repeat; }
 
 .wForm textarea {
   background: #FFFFFF;

@@ -66,7 +66,7 @@
     font-weight: $bold;
   }
 
-  &:hover,
+  //&:hover,
   &:focus {
     border: 3px solid $active-input-border-color;
     box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
@@ -98,37 +98,11 @@
       width: rem(22);
     }
   }
-
-  // Radio buttons
-  .wForm .oneChoice.radio {
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-    label.postField {
-      padding-left: 2.2rem;
-      position: relative;
-
-      &::before {
-        background: $white;
-        border: rem(2) solid $input-border-color;
-        content: '';
-        display: block;
-        left: 0;
-        height: rem(22);
-        padding: 0.05rem;
-        position: absolute;
-        top: -0.25rem;
-        width: rem(22);
-      }
-    }
-  }
-
   input[type="checkbox"] {
     display: none;
 
     &:checked + label:before {
-      background: $button-bg-color;
+      background: $white url('../img/checkbox-bg.png') center center no-repeat;
     }
   }
 }
