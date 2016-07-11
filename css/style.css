@@ -34,6 +34,9 @@
     content: ' *';
     font-weight: 400; }
 
+.wForm .inputWrapper {
+  display: block; }
+
 .wForm input[type=text] {
   background: #FFFFFF;
   border: 0.0625rem solid #979797;
