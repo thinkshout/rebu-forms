@@ -8,3 +8,7 @@
 @import '_fonts.scss';
 @import '_form.scss';
 @import '_layout.scss';
+
+body {
+  font-weight: $normal;
+}
