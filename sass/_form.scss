@@ -47,7 +47,7 @@
 
 // Text input
 .wForm input[type=text] {
-  background: $white;
+  background-color: $white !important;
   border: rem(1) solid $input-border-color;
   color: $black;
   display: block;
@@ -290,4 +290,11 @@
   color: $field-hint-color;
   font-size: rem(15);
   font-weight: $normal;
+}
+
+
+// Dollar sign text field
+.wForm input[type=text].dollar-field {
+  background: url('../img/dollar-field-bg.png') 1rem center no-repeat;
+  padding-left: 2.2rem; 
 }

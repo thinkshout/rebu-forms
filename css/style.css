@@ -41,7 +41,7 @@ a {
   display: block; }
 
 .wForm input[type=text] {
-  background: #FFFFFF;
+  background-color: #FFFFFF !important;
   border: 0.0625rem solid #979797;
   color: #000000;
   display: block;
@@ -272,6 +272,10 @@ a {
   color: #676768;
   font-size: 0.9375rem;
   font-weight: 400; }
+
+.wForm input[type=text].dollar-field {
+  background: url("../img/dollar-field-bg.png") 1rem center no-repeat;
+  padding-left: 2.2rem; }
 
 .wForm .section.group {
   margin-bottom: 2.5rem;
