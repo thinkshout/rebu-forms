@@ -48,6 +48,7 @@
 // Text input
 .wForm input[type=text] {
   background-color: $white !important;
+  background-image: none;
   border: rem(1) solid $input-border-color;
   color: $black;
   display: block;

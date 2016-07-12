@@ -42,6 +42,7 @@ a {
 
 .wForm input[type=text] {
   background-color: #FFFFFF !important;
+  background-image: none;
   border: 0.0625rem solid #979797;
   color: #000000;
   display: block;
