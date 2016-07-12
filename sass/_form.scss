@@ -216,6 +216,16 @@
   }
 }
 
+.wForm .removeable {
+  text-align: right;
+
+  a {
+    color: $help-text-color;
+    font-weight: $bold;
+    text-decoration: none;
+  }
+}
+
 // Submit button
 .wForm input[type=submit] {
   background: $action-color;
@@ -296,5 +306,5 @@
 // Dollar sign text field
 .wForm input[type=text].dollar-field {
   background: url('../img/dollar-field-bg.png') 1rem center no-repeat;
-  padding-left: 2.2rem; 
+  padding-left: 2.2rem;
 }

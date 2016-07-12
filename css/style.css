@@ -212,6 +212,13 @@ a {
     height: 1.5rem;
     vertical-align: bottom; }
 
+.wForm .removeable {
+  text-align: right; }
+  .wForm .removeable a {
+    color: #9B9B9B;
+    font-weight: 700;
+    text-decoration: none; }
+
 .wForm input[type=submit] {
   background: #7AC143;
   border: none;
