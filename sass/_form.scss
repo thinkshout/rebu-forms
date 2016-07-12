@@ -98,6 +98,7 @@
     display: none;
 
     &:checked + label:before {
+      border: rem(2) solid $action-color;
       background: $white url('../img/checkbox-bg.png') center center no-repeat;
     }
   }

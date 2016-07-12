@@ -101,6 +101,7 @@ a {
   .wForm .oneChoice.checkbox input[type="checkbox"] {
     display: none; }
     .wForm .oneChoice.checkbox input[type="checkbox"]:checked + label:before {
+      border: 0.125rem solid #7AC143;
       background: #FFFFFF url("../img/checkbox-bg.png") center center no-repeat; }
 
 .wForm .oneChoice.radio {
