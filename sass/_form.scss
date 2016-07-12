@@ -107,6 +107,40 @@
   }
 }
 
+// Radio buttons
+.wForm .oneChoice.radio {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+  label.postField {
+    padding-left: 2.2rem;
+    position: relative;
+
+    &::before {
+      background: $white;
+      border: rem(2) solid $input-border-color;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      left: 0;
+      height: rem(22);
+      padding: 0.05rem;
+      position: absolute;
+      top: -0.25rem;
+      width: rem(22);
+    }
+  }
+  input[type="radio"] {
+    display: none;
+
+    &:checked + label:before {
+      background: $button-bg-color;
+      background: $white url('../img/radio-bg.png') center center no-repeat;
+    }
+  }
+}
+
 // Text area
 .wForm textarea {
   background: $white;

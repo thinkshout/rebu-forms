@@ -109,6 +109,31 @@ a {
     .wForm .oneChoice.checkbox input[type="checkbox"]:checked + label:before {
       background: #FFFFFF url("../img/checkbox-bg.png") center center no-repeat; }
 
+.wForm .oneChoice.radio {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+  .wForm .oneChoice.radio label.postField {
+    padding-left: 2.2rem;
+    position: relative; }
+    .wForm .oneChoice.radio label.postField::before {
+      background: #FFFFFF;
+      border: 0.125rem solid #979797;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      left: 0;
+      height: 1.375rem;
+      padding: 0.05rem;
+      position: absolute;
+      top: -0.25rem;
+      width: 1.375rem; }
+  .wForm .oneChoice.radio input[type="radio"] {
+    display: none; }
+    .wForm .oneChoice.radio input[type="radio"]:checked + label:before {
+      background: #7AC143;
+      background: #FFFFFF url("../img/radio-bg.png") center center no-repeat; }
+
 .wForm textarea {
   background: #FFFFFF;
   border: 0.0625rem solid #979797;
