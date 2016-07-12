@@ -11,10 +11,6 @@
   padding: 3rem 3rem 0.5rem 3rem;
 }
 
-.wForm .oneField {
-  margin-bottom: 1rem;
-}
-
 // Form title
 .wForm .wFormTitle {
   font-family: $robotoCondensed;
@@ -43,6 +39,7 @@
 // Input wrapper
 .wForm .inputWrapper {
   display: block;
+  margin-bottom: 1.6rem;
 }
 
 // Text input

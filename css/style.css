@@ -14,9 +14,6 @@ a {
   font-family: "Roboto", sans-serif;
   padding: 3rem 3rem 0.5rem 3rem; }
 
-.wForm .oneField {
-  margin-bottom: 1rem; }
-
 .wForm .wFormTitle {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.625rem;
@@ -38,7 +35,8 @@ a {
     font-weight: 400; }
 
 .wForm .inputWrapper {
-  display: block; }
+  display: block;
+  margin-bottom: 1.6rem; }
 
 .wForm input[type=text] {
   background: #FFFFFF;
@@ -260,7 +258,7 @@ a {
   font-weight: 400; }
 
 .wForm .section.group {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   overflow: hidden; }
 
 .wForm .actions {
