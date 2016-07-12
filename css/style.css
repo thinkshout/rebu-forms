@@ -21,6 +21,9 @@ a {
   margin-bottom: 3rem;
   text-align: center; }
 
+.wForm .oneField {
+  margin-bottom: 1.6rem; }
+
 .wForm label.preField,
 .wForm label.postField {
   color: #545455;
@@ -35,8 +38,7 @@ a {
     font-weight: 400; }
 
 .wForm .inputWrapper {
-  display: block;
-  margin-bottom: 1.6rem; }
+  display: block; }
 
 .wForm input[type=text] {
   background: #FFFFFF;

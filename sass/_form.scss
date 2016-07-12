@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.wForm .oneField {
+  margin-bottom: 1.6rem;
+}
+
 // Label
 .wForm label.preField,
 .wForm label.postField {
@@ -39,7 +43,6 @@
 // Input wrapper
 .wForm .inputWrapper {
   display: block;
-  margin-bottom: 1.6rem;
 }
 
 // Text input
