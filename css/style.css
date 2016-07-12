@@ -201,7 +201,8 @@ a {
       padding-right: 0.5rem; }
 
 .wForm .duplicateSpan {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2rem; }
   .wForm .duplicateSpan a {
     background: url("../img/plus-icon.png") left center no-repeat;
     font-size: 1.125rem;
