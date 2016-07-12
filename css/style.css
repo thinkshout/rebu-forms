@@ -246,6 +246,13 @@ a {
     .supportInfo a:hover {
       text-decoration: underline; }
 
+.charter-logo {
+  text-align: center;
+  margin-top: 4rem; }
+  .charter-logo img {
+    height: auto;
+    width: 17.0625rem; }
+
 .wForm .section.group {
   margin-bottom: 4rem;
   overflow: hidden; }
