@@ -198,12 +198,13 @@ a {
     .selectWrapper select:hover {
       padding-right: 0.5rem; }
 
-.wForm input[type=submit].primaryAction {
+.wForm input[type=submit] {
   background: #7AC143;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  cursor: pointer;
   display: block;
   font-size: 1.375rem;
   font-weight: 700;
@@ -217,7 +218,7 @@ a {
   -webkit-transition: 0.2s background;
   -moz-transition: 0.2s background;
   transition: 0.2s background; }
-  .wForm input[type=submit].primaryAction:hover {
+  .wForm input[type=submit]:hover {
     background: #659A3C;
     -webkit-transition: 0.2s background;
     -moz-transition: 0.2s background;

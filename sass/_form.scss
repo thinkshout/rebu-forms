@@ -212,12 +212,13 @@
 // }
 
 // Submit button
-.wForm input[type=submit].primaryAction {
+.wForm input[type=submit] {
   background: $action-color;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  color: $white;
+  color: $white !important; // override for "please wait" button
+  cursor: pointer;
   display: block;
   font-size: rem(22);
   font-weight: $bold;
