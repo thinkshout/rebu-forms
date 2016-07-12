@@ -200,17 +200,21 @@
 }
 
 // Duplicate response
-// .wForm .duplicateSpan a {
-//   background: $action-color;
-//   border: none;
-//   border-radius: 0;
-//   box-shadow: none;
-//   color: $white;
-//   font-size: rem(22);
-//   font-weight: $bold;
-//   padding: 1rem;
-//   text-decoration: none;
-// }
+.wForm .duplicateSpan {
+  text-align: center;
+
+  a {
+    background: url('../img/plus-icon.png') left center no-repeat;
+    font-size: rem(18);
+    font-weight: $bold;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 2rem;
+    padding-top: 0.25rem;
+    height: rem(24);
+    vertical-align: bottom;
+  }
+}
 
 // Submit button
 .wForm input[type=submit] {

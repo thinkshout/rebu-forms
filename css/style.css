@@ -199,6 +199,19 @@ a {
     .selectWrapper select:hover {
       padding-right: 0.5rem; }
 
+.wForm .duplicateSpan {
+  text-align: center; }
+  .wForm .duplicateSpan a {
+    background: url("../img/plus-icon.png") left center no-repeat;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 2rem;
+    padding-top: 0.25rem;
+    height: 1.5rem;
+    vertical-align: bottom; }
+
 .wForm input[type=submit] {
   background: #7AC143;
   border: none;
