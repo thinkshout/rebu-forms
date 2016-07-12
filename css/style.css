@@ -169,7 +169,7 @@ a {
     transition: border 0.1s; }
 
 .selectWrapper {
-  background: #FFFFFF url("../img/select-arrow.png") 97% center no-repeat;
+  background: #FFFFFF url("../img/select-arrow.png") calc(100% - 1rem) center no-repeat;
   border: 0.0625rem solid #979797;
   position: relative; }
   .selectWrapper:hover {
@@ -184,7 +184,7 @@ a {
   .selectWrapper select {
     background: transparent;
     border: none;
-    color: #B2B2B2;
+    color: #000000;
     font-size: 1.125rem;
     font-weight: 700;
     width: 100%;
@@ -252,6 +252,12 @@ a {
   .charter-logo img {
     height: auto;
     width: 17.0625rem; }
+
+.wForm .field-hint {
+  background: none;
+  color: #676768;
+  font-size: 0.9375rem;
+  font-weight: 400; }
 
 .wForm .section.group {
   margin-bottom: 4rem;

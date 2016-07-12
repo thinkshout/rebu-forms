@@ -170,7 +170,7 @@
 
 // Select
 .selectWrapper {
-  background: $white url('../img/select-arrow.png') 97% center no-repeat;
+  background: $white url('../img/select-arrow.png') calc(100% - 1rem) center no-repeat;
   border: rem(1) solid $input-border-color;
   position: relative;
 
@@ -184,7 +184,7 @@
   select {
     background: transparent;
     border: none;
-    color: $placeholder-color;
+    color: $black;
     font-size: rem(18);
     font-weight: $bold;
     width: 100%;
@@ -277,4 +277,12 @@
     height: auto;
     width: rem(273);
   }
+}
+
+// Help text
+.wForm .field-hint {
+  background: none;
+  color: $field-hint-color;
+  font-size: rem(15);
+  font-weight: $normal;
 }
