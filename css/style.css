@@ -59,22 +59,18 @@ a {
   .wForm input[type=text]::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
-    font-style: italic;
     font-weight: 700; }
   .wForm input[type=text]::-moz-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
-    font-style: italic;
     font-weight: 700; }
   .wForm input[type=text]:-moz-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
-    font-style: italic;
     font-weight: 700; }
   .wForm input[type=text]:-ms-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
-    font-style: italic;
     font-weight: 700; }
   .wForm input[type=text]:focus {
     border: 3px solid #7AC143;
@@ -188,11 +184,11 @@ a {
   .selectWrapper select {
     background: transparent;
     border: none;
-    color: #545455;
-    font-size: 1.3125rem;
+    color: #B2B2B2;
+    font-size: 1.125rem;
     font-weight: 700;
     width: 100%;
-    padding: 1rem;
+    padding: 1.125rem 1rem;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -217,7 +213,15 @@ a {
   height: 4.125rem;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-transition: 0.2s background;
+  -moz-transition: 0.2s background;
+  transition: 0.2s background; }
+  .wForm input[type=submit].primaryAction:hover {
+    background: #659A3C;
+    -webkit-transition: 0.2s background;
+    -moz-transition: 0.2s background;
+    transition: 0.2s background; }
 
 .wForm form .errFld {
   border: none; }

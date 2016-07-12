@@ -62,7 +62,6 @@
   @include placeholder {
     font-family: $roboto;
     font-size: rem(18);
-    font-style: italic;
     font-weight: $bold;
   }
 
@@ -135,7 +134,7 @@
     display: none;
 
     &:checked + label:before {
-      background: $button-bg-color;
+      background: $action-color;
       background: $white url('../img/radio-bg.png') center center no-repeat;
     }
   }
@@ -185,11 +184,11 @@
   select {
     background: transparent;
     border: none;
-    color: $label-color;
-    font-size: rem(21);
+    color: $placeholder-color;
+    font-size: rem(18);
     font-weight: $bold;
     width: 100%;
-    padding: 1rem;
+    padding: 1.125rem 1rem;
     outline: none;
     @include appearance(none);
 
@@ -201,7 +200,7 @@
 
 // Duplicate response
 // .wForm .duplicateSpan a {
-//   background: $button-bg-color;
+//   background: $action-color;
 //   border: none;
 //   border-radius: 0;
 //   box-shadow: none;
@@ -214,7 +213,7 @@
 
 // Submit button
 .wForm input[type=submit].primaryAction {
-  background: $button-bg-color;
+  background: $action-color;
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -229,6 +228,12 @@
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  @include transition(0.2s background);
+
+  &:hover {
+    background: $action-hover-color;
+    @include transition(0.2s background);
+  }
 }
 
 // Errors
