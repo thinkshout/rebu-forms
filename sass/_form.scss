@@ -164,6 +164,12 @@
     padding: 1rem 0;
     text-align: center;
     width: 100%;
+    @include transition(0.2s background);
+
+    &:hover {
+      background: $radio-active;
+      @include transition(0.2s background);
+    }
 
     &::before {
       display: none;

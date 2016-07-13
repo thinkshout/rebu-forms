@@ -148,7 +148,15 @@ a {
     margin-right: 1rem;
     padding: 1rem 0;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: 0.2s background;
+    -moz-transition: 0.2s background;
+    transition: 0.2s background; }
+    .wForm .oneChoice.radio.button-style label.postField:hover {
+      background: #7AC143;
+      -webkit-transition: 0.2s background;
+      -moz-transition: 0.2s background;
+      transition: 0.2s background; }
     .wForm .oneChoice.radio.button-style label.postField::before {
       display: none; }
   .wForm .oneChoice.radio.button-style input[type="radio"] {
