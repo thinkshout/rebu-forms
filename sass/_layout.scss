@@ -19,9 +19,18 @@
   margin-bottom: 0;
   width: 32%;
 
+  @include small {
+    float: none;
+    width: 100%;
+  }
+
   &.last {
     float: right;
     margin-right: 2px;
+
+    @include small {
+      float: none;
+    }
   }
 }
 
@@ -30,9 +39,16 @@
   margin-right: 2%;
   width: 64%;
 
+  @include small {
+    width: 100%;
+  }
+
   &.last {
     float: right;
     margin-right: 0;
+
+    width: 100%;
+
   }
 }
 
@@ -40,6 +56,10 @@
   float: left;
   margin-right: 2%;
   width: 48%;
+
+  @include small {
+    width: 100%;
+  }
 
   &.last {
     float: right;

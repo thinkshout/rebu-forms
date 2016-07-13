@@ -13,6 +13,9 @@ a {
   background: #F2F2F2;
   font-family: "Roboto", sans-serif;
   padding: 3rem 3rem 0.5rem 3rem; }
+  @media (max-width: 600px) {
+    .wForm {
+      padding: 1rem; } }
 
 .wForm .wFormTitle {
   font-family: "Roboto Condensed", sans-serif;
@@ -334,22 +337,36 @@ a {
   margin-right: 2%;
   margin-bottom: 0;
   width: 32%; }
+  @media (max-width: 600px) {
+    .third {
+      float: none;
+      width: 100%; } }
   .third.last {
     float: right;
     margin-right: 2px; }
+    @media (max-width: 600px) {
+      .third.last {
+        float: none; } }
 
 .two-thirds {
   float: left;
   margin-right: 2%;
   width: 64%; }
+  @media (max-width: 600px) {
+    .two-thirds {
+      width: 100%; } }
   .two-thirds.last {
     float: right;
-    margin-right: 0; }
+    margin-right: 0;
+    width: 100%; }
 
 .half {
   float: left;
   margin-right: 2%;
   width: 48%; }
+  @media (max-width: 600px) {
+    .half {
+      width: 100%; } }
   .half.last {
     float: right;
     margin-right: 0; }

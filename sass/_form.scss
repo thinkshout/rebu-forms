@@ -9,6 +9,10 @@
   background: $form-bg-color;
   font-family: $roboto;
   padding: 3rem 3rem 0.5rem 3rem;
+
+  @include small {
+    padding: 1rem;
+  }
 }
 
 // Form title

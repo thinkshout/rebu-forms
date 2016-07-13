@@ -23,3 +23,10 @@ $roboto: 'Roboto', sans-serif;
 $normal: 400;
 $bold:   700;
 $italic: italic;
+
+
+@mixin small() {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
