@@ -325,9 +325,14 @@ a {
 .wForm .actions {
   margin-top: 2rem; }
 
+.full {
+  clear: both;
+  width: 100%; }
+
 .third {
   float: left;
   margin-right: 2%;
+  margin-bottom: 0;
   width: 32%; }
   .third.last {
     float: right;
@@ -337,6 +342,9 @@ a {
   float: left;
   margin-right: 2%;
   width: 64%; }
+  .two-thirds.last {
+    float: right;
+    margin-right: 0; }
 
 .half {
   float: left;
@@ -345,6 +353,9 @@ a {
   .half.last {
     float: right;
     margin-right: 0; }
+
+.clear-left {
+  clear: left; }
 
 body {
   font-weight: 400; }
