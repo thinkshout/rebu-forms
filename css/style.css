@@ -132,6 +132,30 @@ a {
       background: #7AC143;
       background: #FFFFFF url("../img/radio-bg.png") center center no-repeat; }
 
+.wForm .oneChoice.radio.button-style {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 2%;
+  width: 23%; }
+  .wForm .oneChoice.radio.button-style.last {
+    margin-right: 0; }
+  .wForm .oneChoice.radio.button-style label.postField {
+    background: #356443;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%; }
+    .wForm .oneChoice.radio.button-style label.postField::before {
+      display: none; }
+  .wForm .oneChoice.radio.button-style input[type="radio"] {
+    visibility: hidden; }
+    .wForm .oneChoice.radio.button-style input[type="radio"]:checked + label {
+      background: #7AC143; }
+
 .wForm textarea {
   background: #FFFFFF;
   border: 0.0625rem solid #979797;

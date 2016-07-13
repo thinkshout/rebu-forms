@@ -47,6 +47,40 @@
 </div>
 
 <div class="section group">
+  <div id="tfa_1943-D" class="oneField field-container-D     ">
+    <label id="tfa_1943-L" for="tfa_1943" class="label preField reqMark">Donation Amount</label><br>
+    <div class="inputWrapper">
+      <span id="tfa_1943" class="choices vertical required">
+        <span class="oneChoice radio button-style"><input type="radio" value="tfa_1944" class="" id="tfa_1944" name="tfa_1943">
+          <label class="label postField" id="tfa_1944-L" for="tfa_1944">$25</label>
+        </span>
+        <span class="oneChoice radio button-style">
+          <input type="radio" value="tfa_1945" class="" id="tfa_1945" name="tfa_1943">
+          <label class="label postField" id="tfa_1945-L" for="tfa_1945">$50</label>
+        </span>
+        <span class="oneChoice radio button-style">
+          <input type="radio" value="tfa_1946" class="" id="tfa_1946" name="tfa_1943">
+          <label class="label postField" id="tfa_1946-L" for="tfa_1946">$100</label>
+        </span>
+        <span class="oneChoice radio button-style last">
+          <input type="radio" value="tfa_1947" class="" id="tfa_1947" name="tfa_1943" data-conditionals="#tfa_1948">
+          <label class="label postField" id="tfa_1947-L" for="tfa_1947">Other</label>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div id="tfa_1948-D" class="oneField field-container-D     ">
+    <label id="tfa_1948-L" for="tfa_1948" class="label preField reqMark">Other Amount</label><br>
+    <div class="inputWrapper">
+      <input type="text" id="tfa_1948" name="tfa_1948" value="" placeholder="" data-condition="`#tfa_1947`" title="Other Amount" class="dollar-field validate-float required">
+    </div>
+  </div>
+  <div id="tfa_1949-D" class="oneField field-container-D     ">
+  <label id="tfa_1949-L" for="tfa_1949" class="label preField reqMark">Payment Frequency</label><br><div class="inputWrapper"><span id="tfa_1949" class="choices  required"><span class="oneChoice radio"><input type="radio" value="tfa_1951" class="" checked id="tfa_1951" name="tfa_1949"><label class="label postField" id="tfa_1951-L" for="tfa_1951">Make a one-time gift </label></span><span class="oneChoice radio"><input type="radio" value="tfa_1950" class="" id="tfa_1950" name="tfa_1949"><label class="label postField" id="tfa_1950-L" for="tfa_1950">Make an automatic monthly payment</label></span></span></div>
+  </div>
+</div>
+
+<div class="section group">
   <div id="tfa_1875-D" class="oneField field-container-D     ">
     <label id="tfa_1875-L" for="tfa_1875" class="label preField reqMark">Billing Street&nbsp;</label><br>
     <div class="inputWrapper"><input type="text" id="tfa_1875" name="tfa_1875" value="" placeholder="Street Address or P.O. Box" title="Billing Street " class="required"></div>
@@ -121,22 +155,6 @@
   </div>
 </div>
 
-
-<div class="section group">
-  <div id="tfa_1943-D" class="oneField field-container-D     ">
-    <label id="tfa_1943-L" for="tfa_1943" class="label preField reqMark">Donation Amount</label><br><div class="inputWrapper"><span id="tfa_1943" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_1944" class="" id="tfa_1944" name="tfa_1943"><label class="label postField" id="tfa_1944-L" for="tfa_1944">$25</label></span><span class="oneChoice"><input type="radio" value="tfa_1945" class="" id="tfa_1945" name="tfa_1943"><label class="label postField" id="tfa_1945-L" for="tfa_1945">$50</label></span><span class="oneChoice"><input type="radio" value="tfa_1946" class="" id="tfa_1946" name="tfa_1943"><label class="label postField" id="tfa_1946-L" for="tfa_1946">$100</label></span><span class="oneChoice"><input type="radio" value="tfa_1947" class="" id="tfa_1947" name="tfa_1943" data-conditionals="#tfa_1948"><label class="label postField" id="tfa_1947-L" for="tfa_1947">Other</label></span></span></div>
-  </div>
-  <div id="tfa_1948-D" class="oneField field-container-D     ">
-    <label id="tfa_1948-L" for="tfa_1948" class="label preField reqMark">Other Amount</label><br>
-    <div class="inputWrapper">
-      <input type="text" id="tfa_1948" name="tfa_1948" value="" placeholder="" data-condition="`#tfa_1947`" title="Other Amount" class="dollar-field validate-float required">
-    </div>
-  </div>
-  <div id="tfa_1949-D" class="oneField field-container-D     ">
-  <label id="tfa_1949-L" for="tfa_1949" class="label preField reqMark">Payment Frequency</label><br><div class="inputWrapper"><span id="tfa_1949" class="choices  required"><span class="oneChoice"><input type="radio" value="tfa_1951" class="" checked id="tfa_1951" name="tfa_1949"><label class="label postField" id="tfa_1951-L" for="tfa_1951">Make a one-time gift </label></span><span class="oneChoice"><input type="radio" value="tfa_1950" class="" id="tfa_1950" name="tfa_1949"><label class="label postField" id="tfa_1950-L" for="tfa_1950">Make an automatic monthly payment</label></span></span></div>
-  </div>
-</div>
-
 <div class="section group">
   <h2 id="tfa_2220-L">Payment Information</h2>
   <div id="tfa_1952-D" class="oneField field-container-D     ">
@@ -162,7 +180,7 @@
         </div>
       </div>
     </div>
-  <div id="tfa_2222-D" class="oneField field-container-D     ">
+  <div id="tfa_2222-D" class="oneField field-container-D">
   <label id="tfa_2222-L" for="tfa_2222" class="label preField reqMark">Card Number</label><br><div class="inputWrapper"><input type="text" id="tfa_2222" name="tfa_2222" autocomplete="off" placeholder="●●●●●●●●●●●●●●●●" title="Card Number" class="required"></div>
   </div>
   <div id="tfa_2224-D" class="oneField field-container-D labelsAbove  half">
@@ -178,12 +196,12 @@
 
   <div id="tfa_2227" class="section" data-condition="`#tfa_1954`">
   <div id="tfa_2228-D" class="oneField field-container-D     ">
-  <label id="tfa_2228-L" for="tfa_2228" class="label preField reqMark">Bank Account Holder's Name</label><br><div class="inputWrapper"><input type="text" id="tfa_2228" name="tfa_2228" value="" placeholder="" title="Bank Account Holder's Name" class="required"></div>
+  <label id="tfa_2228-L" for="tfa_2228" class="label preField reqMark">Bank Account Holder's Name</label><br><div class="inputWrapper"><input type="text" id="tfa_2228" name="tfa_2228" value="" placeholder="Account Holder Name" title="Bank Account Holder's Name" class="required"></div>
   </div>
   <div id="tfa_2231-D" class="oneField field-container-D     ">
   <label id="tfa_2231-L" for="tfa_2231" class="label preField reqMark">Account Type</label><br><div class="inputWrapper"><table id="tfa_2231" class="choices columns2 required"><tr>
-  <td><span class="oneChoice"><input type="radio" value="tfa_2235" class="" checked id="tfa_2235" name="tfa_2231"><label class="label postField" id="tfa_2235-L" for="tfa_2235">Checking</label></span></td>
-  <td><span class="oneChoice"><input type="radio" value="tfa_2236" class="" id="tfa_2236" name="tfa_2231"><label class="label postField" id="tfa_2236-L" for="tfa_2236">Savings</label></span></td>
+  <td><span class="oneChoice radio"><input type="radio" value="tfa_2235" class="" checked id="tfa_2235" name="tfa_2231"><label class="label postField" id="tfa_2235-L" for="tfa_2235">Checking</label></span></td>
+  <td><span class="oneChoice radio"><input type="radio" value="tfa_2236" class="" id="tfa_2236" name="tfa_2231"><label class="label postField" id="tfa_2236-L" for="tfa_2236">Savings</label></span></td>
   </tr></table></div>
   </div>
   <div id="tfa_2229-D" class="oneField field-container-D     ">
