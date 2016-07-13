@@ -357,8 +357,7 @@ a {
       width: 100%; } }
   .two-thirds.last {
     float: right;
-    margin-right: 0;
-    width: 100%; }
+    margin-right: 0; }
 
 .half {
   float: left;
