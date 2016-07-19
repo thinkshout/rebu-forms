@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rebuilding Together Form Style Guide</title>
+  <meta name="description" content="Rebuilding Together Form Style Guide">
+  <meta name="author" content="ThinkShout">
+  <link href="https://www.tfaforms.com/themes/get/default" rel="stylesheet" type="text/css" />
+  <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-jsonly.css" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+  <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.10/js/wforms.js"></script>
+  <script type="text/javascript">
+      wFORMS.behaviors.prefill.skip = false;
+  </script>
+      <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.10/js/localization-en_US.js"></script>
+  <style>
+  	@import url('css/style.css');
+  	input:not([type="image" i]), textarea {
+  	    box-sizing: border-box;
+  	}
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div class="wFormContainer"  >
+		<div class="">
+	  		<div class="wForm" id="" dir="ltr">
+
+				<h3 class="wFormTitle" id="">H3 Header: #545455, 26px, Roboto Condensed, Bold</h3>
+				<form method="post" action="/" class="example-form" id="rebu-sg-form1">
+					<div class="section group">
+						<div id="" class="oneField">
+					  		<label id="" for="tfa_1" class="label preField reqMark">Input Label: #545455, 18px, Roboto, Bold&nbsp;</label><span>Required Mark: #EF4044<br>
+					  		<div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" placeholder="Placeholder: 18px. Input Text: #000000, 21px" title="Input Label" class="required"><br>
+					  		Input border default: 1px solid #979797<br>
+					  		Input border active: 3px solid #7AC143 + box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);</div>
+						</div>
+					</div>
+
+					<div class="section group">
+					    <div id="" class="oneField">
+					    	<label id="" class="label preField ">Checkbox Pre-Label<span class="field-hint"> (additional instructions / hint - #676768, 15px)</span></label><br>
+					    	<div class="inputWrapper">
+					    		<span class="choices vertical checkbox">
+					    			<span class="oneChoice checkbox">
+					    				<input type="checkbox" value="" class="" id="rebu-check" name="">
+					    				<label class="label postField" id="" for="rebu-check">Checkbox Label&nbsp;</label>
+					    			</span>
+					    		</span>
+					    	</div>
+					    	Checkbox is hidden, replaced with a label::before psuedo-element.<br>Unchecked: 2px solid #979797.<br>
+					    	Checked: #7AC143 with a background image for the check: img/checkbox-bg.png
+					    </div>
+					</div>
+
+					<div class="section group">
+					    <div id="-D" class="oneField">
+						    <label id="" for="" class="label preField ">Select List Label</label><br>
+						    <div class="inputWrapper selectWrapper">
+						    	<select id="" name="" title="Availability " class=""><option value="">Select Default: #000000, 18px, Bold</option>
+								    <option value="" id="" class="">Dropdown</option>
+								    <option value="" id="" class="">uses</option>
+								    <option value="" id="" class="">system</option>
+								    <option value="" id="" class="">default</option>
+								    <option value="" id="" class="">styles</option>
+								  </select>
+							</div>
+							The arrow is a background image: /img/select-arrow.png
+						</div>
+					</div>
+
+					<div class="actions" id=""><input type="submit" class="primaryAction" value="Submit"></div>
+					<div style="text-align: center">Default: #FFFFFF, 22px, background: #7AC143<br>
+					Hover: background: #659A3C, box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);</div>
+
+					<br><br>
+					<div class="supportInfo" >
+					  <a href="https://www.tfaforms.com/forms/help/430067" target="new">Help link: 17px, #9B9B9B, Lucida Grande, Lucida Sans Unicode, sans-serif, Italic</a>
+					</div>
+					<br><br>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
