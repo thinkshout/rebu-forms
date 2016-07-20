@@ -3,18 +3,18 @@
 a {
   color: #7AC143; }
 
-.wForm formContainer {
+.wFormContainer {
   border: none;
   box-shadow: 0px 2px 6px 0px rgba(137, 137, 137, 0.5);
   max-width: 44.25rem;
   margin: 0 auto; }
 
-.wForm form form {
+.wForm {
   background: #F2F2F2;
   font-family: "Roboto", sans-serif;
   padding: 3rem 3rem 0.5rem 3rem; }
   @media (max-width: 600px) {
-    .wForm form form {
+    .wForm {
       padding: 1rem; } }
 
 .wForm form .wForm formTitle {

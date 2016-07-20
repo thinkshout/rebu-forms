@@ -1,11 +1,11 @@
-.wForm formContainer {
+.wFormContainer {
   border: none;
   box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50);
   max-width: rem(708);
   margin: 0 auto;
 }
 
-.wForm form form {
+.wForm {
   background: $form-bg-color;
   font-family: $roboto;
   padding: 3rem 3rem 0.5rem 3rem;
