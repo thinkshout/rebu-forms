@@ -1,11 +1,11 @@
-.wFormContainer {
+.wForm formContainer {
   border: none;
   box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50);
   max-width: rem(708);
   margin: 0 auto;
 }
 
-.wForm {
+.wForm form form {
   background: $form-bg-color;
   font-family: $roboto;
   padding: 3rem 3rem 0.5rem 3rem;
@@ -16,7 +16,7 @@
 }
 
 // Form title
-.wForm .wFormTitle {
+.wForm form .wForm formTitle {
   font-family: $robotoCondensed;
   font-size: rem(26);
   color: $form-title-color;
@@ -24,13 +24,13 @@
   text-align: center;
 }
 
-.wForm .oneField {
+.wForm form .oneField {
   margin-bottom: 1.6rem;
 }
 
 // Label
-.wForm label.preField,
-.wForm label.postField {
+.wForm form label.preField,
+.wForm form label.postField {
   color: $label-color;
   display: inline-block;
   font-weight: $bold;
@@ -45,12 +45,12 @@
 }
 
 // Input wrapper
-.wForm .inputWrapper {
+.wForm form .inputWrapper {
   display: block;
 }
 
 // Text input
-.wForm input[type=text] {
+.wForm form input[type=text] {
   background-color: $white !important;
   background-image: none;
   border: rem(1) solid $input-border-color;
@@ -80,7 +80,7 @@
 }
 
 // Checkboxes
-.wForm .oneChoice.checkbox {
+.wForm form .oneChoice.checkbox {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -113,7 +113,7 @@
 }
 
 // Radio buttons
-.wForm .oneChoice.radio {
+.wForm form .oneChoice.radio {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -148,7 +148,7 @@
 }
 
 // Radio buttons - button style
-.wForm .oneChoice.radio.button-style {
+.wForm form .oneChoice.radio.button-style {
   display: inline-block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -191,7 +191,7 @@
 
 
 // Text area
-.wForm textarea {
+.wForm form textarea {
   background: $white;
   border: rem(1) solid $input-border-color;
   color: $black;
@@ -249,7 +249,7 @@
 }
 
 // Duplicate response
-.wForm .duplicateSpan {
+.wForm form .duplicateSpan {
   text-align: center;
   margin-bottom: 2rem;
 
@@ -266,7 +266,7 @@
   }
 }
 
-.wForm .removeable {
+.wForm form .removeable {
   text-align: right;
 
   a {
@@ -277,7 +277,7 @@
 }
 
 // Submit button
-.wForm input[type=submit] {
+.wForm form input[type=submit] {
   background: $action-color;
   border: none;
   border-radius: 0;
@@ -303,11 +303,11 @@
 }
 
 // Errors
-.wForm form .errFld {
+.wForm form form .errFld {
   border: none;
 }
 
-.wForm form .errMsg {
+.wForm form form .errMsg {
   font-family: $roboto;
   font-size: rem(14);
   font-style: italic;
@@ -345,7 +345,7 @@
 }
 
 // Help text
-.wForm .field-hint {
+.wForm form .field-hint {
   background: none;
   color: $field-hint-color;
   font-size: rem(15);
@@ -354,7 +354,7 @@
 
 
 // Dollar sign text field
-.wForm input[type=text].dollar-field {
+.wForm form input[type=text].dollar-field {
   background: url('../img/dollar-field-bg.png') 1rem center no-repeat;
   padding-left: 2.2rem;
 }
