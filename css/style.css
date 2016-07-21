@@ -32,8 +32,8 @@ a {
   font-weight: 700 !important;
   font-size: 18px !important;
   margin-bottom: 8px !important;
-  position: relative;
-  padding: 0; }
+  position: relative !important;
+  padding: 0 !important; }
   .embedded-form-wrapper .wForm form label.preField.reqMark::after,
   .embedded-form-wrapper .wForm form label.postField.reqMark::after {
     color: #EF4044 !important;
