@@ -30,8 +30,10 @@ a {
   color: #545455 !important;
   display: inline-block !important;
   font-weight: 700 !important;
-  font-size: 1.125rem !important;
-  margin-bottom: 0.5rem !important; }
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+  position: relative;
+  padding: 0; }
   .embedded-form-wrapper .wForm form label.preField.reqMark::after,
   .embedded-form-wrapper .wForm form label.postField.reqMark::after {
     color: #EF4044 !important;

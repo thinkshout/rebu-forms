@@ -41,8 +41,10 @@
     color: $label-color !important;
     display: inline-block !important;
     font-weight: $bold !important;
-    font-size: rem(18) !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+    position: relative;
+    padding: 0;
 
     &.reqMark::after {
       color: $error-color !important;
