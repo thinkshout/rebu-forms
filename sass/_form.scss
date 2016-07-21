@@ -1,5 +1,5 @@
 .embedded-form-wrapper {
-  $em-base: 16px !important;
+  $em-base: 16px;
 
   .wFormContainer {
     border: none !important !important;
@@ -68,8 +68,8 @@
     padding: 1rem !important;
     outline: none !important;
     width: 100% !important;
-    @include transition(box-shadow 0.2s) !important;
-    @include transition(border 0.1s) !important;
+    @include transition(box-shadow 0.2s);
+    @include transition(border 0.1s);
 
     @include placeholder {
       font-family: $roboto !important;
@@ -81,8 +81,8 @@
     &:focus {
       border: 3px solid $active-input-border-color !important;
       box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s) !important;
-      @include transition(border 0.1s) !important;
+      @include transition(box-shadow 0.2s);
+      @include transition(border 0.1s);
     }
   }
 
@@ -175,11 +175,11 @@
       padding: 1rem 0 !important;
       text-align: center !important;
       width: 100% !important;
-      @include transition(0.2s background) !important;
+      @include transition(0.2s background);
 
       &:hover {
         background: $radio-active !important;
-        @include transition(0.2s background) !important;
+        @include transition(0.2s background);
       }
 
       &::before {
@@ -208,8 +208,8 @@
     padding: 1rem !important;
     outline: none !important;
     width: 100% !important;
-    @include transition(box-shadow 0.2s) !important;
-    @include transition(border 0.1s) !important;
+    @include transition(box-shadow 0.2s);
+    @include transition(border 0.1s);
 
     @include placeholder {
       font-size: rem(18) !important;
@@ -220,8 +220,8 @@
     &:focus {
       border: 3px solid $active-input-border-color !important;
       box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s) !important;
-      @include transition(border 0.1s) !important;
+      @include transition(box-shadow 0.2s);
+      @include transition(border 0.1s);
     }
   }
 
@@ -234,8 +234,8 @@
     &:hover {
       border: 3px solid $active-input-border-color !important;
       box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s) !important;
-      @include transition(border 0.1s) !important;
+      @include transition(box-shadow 0.2s);
+      @include transition(border 0.1s);
     }
 
     select {
@@ -247,7 +247,7 @@
       width: 100% !important;
       padding: 1.125rem 1rem !important;
       outline: none !important;
-      @include appearance(none) !important;
+      @include appearance(none);
 
       &:hover {
         padding-right: 0.5rem !important;
@@ -301,11 +301,11 @@
     text-align: center !important;
     text-decoration: none !important;
     vertical-align: middle !important;
-    @include transition(0.2s background) !important;
+    @include transition(0.2s background);
 
     &:hover {
       background: $action-hover-color !important;
-      @include transition(0.2s background) !important;
+      @include transition(0.2s background);
     }
   }
 
