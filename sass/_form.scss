@@ -17,6 +17,10 @@
     }
   }
 
+  .wForm form {
+    width: auto !important;
+  }
+
   // Form title
   .wForm .formTitle {
     font-family: $robotoCondensed;
