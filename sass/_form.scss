@@ -2,8 +2,8 @@
   $em-base: 16px;
 
   .wFormContainer {
-    border: none !important !important;
-    box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50) !important !important;
+    border: none !important;
+    box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50) !important;
     max-width: 708px !important;
     margin: 0 auto !important;
   }
@@ -19,7 +19,7 @@
   }
 
   .wForm form {
-    width: auto !important !important;
+    width: auto !important;
   }
 
   // Form title
@@ -58,7 +58,7 @@
 
   // Text input
   .wForm form input[type=text] {
-    background-color: $white !important !important;
+    background-color: $white !important;
     background-image: none !important;
     border: rem(1) solid $input-border-color !important;
     color: $black !important;
@@ -289,7 +289,7 @@
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    color: $white !important !important; // override for "please wait" button
+    color: $white !important; // override for "please wait" button
     cursor: pointer !important;
     display: block !important;
     font-size: rem(22) !important;
