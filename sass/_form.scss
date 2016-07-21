@@ -25,9 +25,9 @@
   // Form title
   .wForm .formTitle {
     font-family: $robotoCondensed !important;
-    font-size: rem(26) !important;
+    font-size: 26px !important;
     color: $form-title-color !important;
-    margin-bottom: 3rem !important;
+    margin-bottom: 20px !important;
     text-align: center !important;
   }
 
@@ -62,10 +62,10 @@
   .wForm form input[type=text] {
     background-color: $white !important;
     background-image: none !important;
-    border: rem(1) solid $input-border-color !important;
+    border: 1px solid $input-border-color !important;
     color: $black !important;
     display: block !important;
-    font-size: rem(21) !important;
+    font-size: 21px !important;
     font-weight: bold !important;
     padding: 1rem !important;
     outline: none !important;
@@ -75,7 +75,7 @@
 
     @include placeholder {
       font-family: $roboto !important;
-      font-size: rem(18) !important;
+      font-size: 18px !important;
       font-weight: $bold !important;
     }
 
@@ -91,24 +91,24 @@
   // Checkboxes
   .wForm form .oneChoice.checkbox {
     display: block !important;
-    margin-bottom: 0.5rem !important;
-    margin-top: 0.5rem !important;
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
 
     label.postField {
-      padding-left: 2.2rem !important;
+      padding-left: 32px !important;
       position: relative !important;
 
       &::before {
         background: $white !important;
-        border: rem(2) solid $input-border-color !important;
+        border: 2px solid $input-border-color !important;
         content: '' !important;
         display: block !important;
         left: 0 !important;
-        height: rem(22) !important;
+        height: 22px !important;
         padding: 0.05rem !important;
         position: absolute !important;
         top: -0.25rem !important;
-        width: rem(22) !important;
+        width: 22px !important;
       }
     }
     input[type="checkbox"] {
