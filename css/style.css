@@ -306,6 +306,9 @@ a {
   background: url("../img/dollar-field-bg.png") 1rem center no-repeat !important;
   padding-left: 2.2rem !important; }
 
+#tfa_1988-D {
+  clear: left; }
+
 .wForm .section.group {
   margin-bottom: 2.5rem;
   overflow: hidden; }
