@@ -3,47 +3,41 @@
 a {
   color: #7AC143; }
 
-.wFormContainer {
+.embedded-form-wrapper .wFormContainer {
   border: none;
   box-shadow: 0px 2px 6px 0px rgba(137, 137, 137, 0.5);
   max-width: 708px;
   margin: 0 auto; }
-
-.wForm {
+.embedded-form-wrapper .wForm {
   background: #F2F2F2;
   font-family: "Roboto", sans-serif;
   padding: 3rem 3rem 0.5rem 3rem; }
   @media (max-width: 600px) {
-    .wForm {
+    .embedded-form-wrapper .wForm {
       padding: 1rem; } }
-
-.wForm form .wForm formTitle {
+.embedded-form-wrapper .wForm .formTitle {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.625rem;
   color: #545455;
   margin-bottom: 3rem;
   text-align: center; }
-
-.wForm form .oneField {
+.embedded-form-wrapper .wForm form .oneField {
   margin-bottom: 1.6rem; }
-
-.wForm form label.preField,
-.wForm form label.postField {
+.embedded-form-wrapper .wForm form label.preField,
+.embedded-form-wrapper .wForm form label.postField {
   color: #545455;
   display: inline-block;
   font-weight: 700;
   font-size: 1.125rem;
   margin-bottom: 0.5rem; }
-  .wForm form label.preField.reqMark::after,
-  .wForm form label.postField.reqMark::after {
+  .embedded-form-wrapper .wForm form label.preField.reqMark::after,
+  .embedded-form-wrapper .wForm form label.postField.reqMark::after {
     color: #EF4044;
     content: ' *';
     font-weight: 400; }
-
-.wForm form .inputWrapper {
+.embedded-form-wrapper .wForm form .inputWrapper {
   display: block; }
-
-.wForm form input[type=text] {
+.embedded-form-wrapper .wForm form input[type=text] {
   background-color: #FFFFFF !important;
   background-image: none;
   border: 0.0625rem solid #979797;
@@ -60,23 +54,23 @@ a {
   -webkit-transition: border 0.1s;
   -moz-transition: border 0.1s;
   transition: border 0.1s; }
-  .wForm form input[type=text]::-webkit-input-placeholder {
+  .embedded-form-wrapper .wForm form input[type=text]::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form input[type=text]::-moz-placeholder {
+  .embedded-form-wrapper .wForm form input[type=text]::-moz-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form input[type=text]:-moz-placeholder {
+  .embedded-form-wrapper .wForm form input[type=text]:-moz-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form input[type=text]:-ms-input-placeholder {
+  .embedded-form-wrapper .wForm form input[type=text]:-ms-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form input[type=text]:focus {
+  .embedded-form-wrapper .wForm form input[type=text]:focus {
     border: 3px solid #7AC143;
     box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
     -webkit-transition: box-shadow 0.2s;
@@ -85,15 +79,14 @@ a {
     -webkit-transition: border 0.1s;
     -moz-transition: border 0.1s;
     transition: border 0.1s; }
-
-.wForm form .oneChoice.checkbox {
+.embedded-form-wrapper .wForm form .oneChoice.checkbox {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem; }
-  .wForm form .oneChoice.checkbox label.postField {
+  .embedded-form-wrapper .wForm form .oneChoice.checkbox label.postField {
     padding-left: 2.2rem;
     position: relative; }
-    .wForm form .oneChoice.checkbox label.postField::before {
+    .embedded-form-wrapper .wForm form .oneChoice.checkbox label.postField::before {
       background: #FFFFFF;
       border: 0.125rem solid #979797;
       content: '';
@@ -104,20 +97,19 @@ a {
       position: absolute;
       top: -0.25rem;
       width: 1.375rem; }
-  .wForm form .oneChoice.checkbox input[type="checkbox"] {
+  .embedded-form-wrapper .wForm form .oneChoice.checkbox input[type="checkbox"] {
     display: none; }
-    .wForm form .oneChoice.checkbox input[type="checkbox"]:checked + label:before {
+    .embedded-form-wrapper .wForm form .oneChoice.checkbox input[type="checkbox"]:checked + label:before {
       border: 0.125rem solid #7AC143;
       background: #FFFFFF url("../img/checkbox-bg.png") center center no-repeat; }
-
-.wForm form .oneChoice.radio {
+.embedded-form-wrapper .wForm form .oneChoice.radio {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem; }
-  .wForm form .oneChoice.radio label.postField {
+  .embedded-form-wrapper .wForm form .oneChoice.radio label.postField {
     padding-left: 2.2rem;
     position: relative; }
-    .wForm form .oneChoice.radio label.postField::before {
+    .embedded-form-wrapper .wForm form .oneChoice.radio label.postField::before {
       background: #FFFFFF;
       border: 0.125rem solid #979797;
       border-radius: 50%;
@@ -129,21 +121,20 @@ a {
       position: absolute;
       top: -0.25rem;
       width: 1.4375rem; }
-  .wForm form .oneChoice.radio input[type="radio"] {
+  .embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"] {
     display: none; }
-    .wForm form .oneChoice.radio input[type="radio"]:checked + label:before {
+    .embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"]:checked + label:before {
       background: #7AC143;
       background: #FFFFFF url("../img/radio-bg.png") center center no-repeat; }
-
-.wForm form .oneChoice.radio.button-style {
+.embedded-form-wrapper .wForm form .oneChoice.radio.button-style {
   display: inline-block;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   margin-right: 2%;
   width: 23%; }
-  .wForm form .oneChoice.radio.button-style.last {
+  .embedded-form-wrapper .wForm form .oneChoice.radio.button-style.last {
     margin-right: 0; }
-  .wForm form .oneChoice.radio.button-style label.postField {
+  .embedded-form-wrapper .wForm form .oneChoice.radio.button-style label.postField {
     background: #356443;
     display: inline-block;
     color: #FFFFFF;
@@ -155,19 +146,18 @@ a {
     -webkit-transition: 0.2s background;
     -moz-transition: 0.2s background;
     transition: 0.2s background; }
-    .wForm form .oneChoice.radio.button-style label.postField:hover {
+    .embedded-form-wrapper .wForm form .oneChoice.radio.button-style label.postField:hover {
       background: #7AC143;
       -webkit-transition: 0.2s background;
       -moz-transition: 0.2s background;
       transition: 0.2s background; }
-    .wForm form .oneChoice.radio.button-style label.postField::before {
+    .embedded-form-wrapper .wForm form .oneChoice.radio.button-style label.postField::before {
       display: none; }
-  .wForm form .oneChoice.radio.button-style input[type="radio"] {
+  .embedded-form-wrapper .wForm form .oneChoice.radio.button-style input[type="radio"] {
     visibility: hidden; }
-    .wForm form .oneChoice.radio.button-style input[type="radio"]:checked + label {
+    .embedded-form-wrapper .wForm form .oneChoice.radio.button-style input[type="radio"]:checked + label {
       background: #7AC143; }
-
-.wForm form textarea {
+.embedded-form-wrapper .wForm form textarea {
   background: #FFFFFF;
   border: 0.0625rem solid #979797;
   color: #000000;
@@ -183,19 +173,19 @@ a {
   -webkit-transition: border 0.1s;
   -moz-transition: border 0.1s;
   transition: border 0.1s; }
-  .wForm form textarea::-webkit-input-placeholder {
+  .embedded-form-wrapper .wForm form textarea::-webkit-input-placeholder {
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form textarea::-moz-placeholder {
+  .embedded-form-wrapper .wForm form textarea::-moz-placeholder {
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form textarea:-moz-placeholder {
+  .embedded-form-wrapper .wForm form textarea:-moz-placeholder {
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form textarea:-ms-input-placeholder {
+  .embedded-form-wrapper .wForm form textarea:-ms-input-placeholder {
     font-size: 1.125rem;
     font-weight: 700; }
-  .wForm form textarea:hover, .wForm form textarea:focus {
+  .embedded-form-wrapper .wForm form textarea:hover, .embedded-form-wrapper .wForm form textarea:focus {
     border: 3px solid #7AC143;
     box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
     -webkit-transition: box-shadow 0.2s;
@@ -204,12 +194,11 @@ a {
     -webkit-transition: border 0.1s;
     -moz-transition: border 0.1s;
     transition: border 0.1s; }
-
-.selectWrapper {
+.embedded-form-wrapper .selectWrapper {
   background: #FFFFFF url("../img/select-arrow.png") calc(100% - 1rem) center no-repeat;
   border: 0.0625rem solid #979797;
   position: relative; }
-  .selectWrapper:hover {
+  .embedded-form-wrapper .selectWrapper:hover {
     border: 3px solid #7AC143;
     box-shadow: 0px 2px 4px 0px rgba(137, 137, 137, 0.5);
     -webkit-transition: box-shadow 0.2s;
@@ -218,7 +207,7 @@ a {
     -webkit-transition: border 0.1s;
     -moz-transition: border 0.1s;
     transition: border 0.1s; }
-  .selectWrapper select {
+  .embedded-form-wrapper .selectWrapper select {
     background: transparent;
     border: none;
     color: #000000;
@@ -232,13 +221,12 @@ a {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-    .selectWrapper select:hover {
+    .embedded-form-wrapper .selectWrapper select:hover {
       padding-right: 0.5rem; }
-
-.wForm form .duplicateSpan {
+.embedded-form-wrapper .wForm form .duplicateSpan {
   text-align: center;
   margin-bottom: 2rem; }
-  .wForm form .duplicateSpan a {
+  .embedded-form-wrapper .wForm form .duplicateSpan a {
     background: url("../img/plus-icon.png") left center no-repeat;
     font-size: 1.125rem;
     font-weight: 700;
@@ -248,15 +236,13 @@ a {
     padding-top: 0.25rem;
     height: 1.5rem;
     vertical-align: bottom; }
-
-.wForm form .removeable {
+.embedded-form-wrapper .wForm form .removeable {
   text-align: right; }
-  .wForm form .removeable a {
+  .embedded-form-wrapper .wForm form .removeable a {
     color: #9B9B9B;
     font-weight: 700;
     text-decoration: none; }
-
-.wForm form input[type=submit] {
+.embedded-form-wrapper .wForm form input[type=submit] {
   background: #7AC143;
   border: none;
   border-radius: 0;
@@ -276,48 +262,42 @@ a {
   -webkit-transition: 0.2s background;
   -moz-transition: 0.2s background;
   transition: 0.2s background; }
-  .wForm form input[type=submit]:hover {
+  .embedded-form-wrapper .wForm form input[type=submit]:hover {
     background: #659A3C;
     -webkit-transition: 0.2s background;
     -moz-transition: 0.2s background;
     transition: 0.2s background; }
-
-.wForm form form .errFld {
+.embedded-form-wrapper .wForm form form .errFld {
   border: none; }
-
-.wForm form form .errMsg {
+.embedded-form-wrapper .wForm form form .errMsg {
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-style: italic;
   margin-top: 0.5rem; }
-
-.supportInfo {
+.embedded-form-wrapper .supportInfo {
   background: #F2F2F2;
   margin: 0;
   padding: 0 0 3rem 0;
   text-align: center; }
-  .supportInfo a {
+  .embedded-form-wrapper .supportInfo a {
     color: #9B9B9B;
     font-size: 1.0625rem;
     font-style: italic;
     text-decoration: none; }
-    .supportInfo a:hover {
+    .embedded-form-wrapper .supportInfo a:hover {
       text-decoration: underline; }
-
-.charter-logo {
+.embedded-form-wrapper .charter-logo {
   text-align: center;
   margin-top: 4rem; }
-  .charter-logo img {
+  .embedded-form-wrapper .charter-logo img {
     height: auto;
     width: 17.0625rem; }
-
-.wForm form .field-hint {
+.embedded-form-wrapper .wForm form .field-hint {
   background: none;
   color: #676768;
   font-size: 0.9375rem;
   font-weight: 400; }
-
-.wForm form input[type=text].dollar-field {
+.embedded-form-wrapper .wForm form input[type=text].dollar-field {
   background: url("../img/dollar-field-bg.png") 1rem center no-repeat;
   padding-left: 2.2rem; }
 
