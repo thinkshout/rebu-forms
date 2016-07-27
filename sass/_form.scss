@@ -1,372 +1,381 @@
-.embedded-form-wrapper {
+#embedded-form-wrapper {
   $em-base: 16px;
 
   .wFormContainer {
-    border: none !important;
-    box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50) !important;
-    max-width: 708px !important;
-    margin: 0 auto !important;
+    border: none;
+    box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50);
+    margin: 0 auto;
+    max-width: 708px;
   }
 
   .wForm {
-    background: $form-bg-color !important;
-    font-family: $roboto !important;
-    padding: 3rem 3rem 0.5rem 3rem !important;
+    background: $form-bg-color;
+    font-family: $roboto;
+    padding: 3rem 3rem 0.5rem 3rem;
 
     @include small {
-      padding: 1rem !important;
+      padding: 1rem;
     }
   }
 
   .wForm form {
-    width: auto !important;
+    width: auto;
   }
 
   // Form title
-  .wForm .formTitle {
-    font-family: $robotoCondensed !important;
-    font-size: 26px !important;
-    color: $form-title-color !important;
-    margin-bottom: 20px !important;
-    text-align: center !important;
+  .wForm .wFormTitle {
+    color: $form-title-color;
+    font-family: $robotoCondensed;
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-align: center;
   }
 
   .wForm form .oneField {
-    margin-bottom: 1.6rem !important;
+    margin-bottom: 1.6rem;
   }
 
   // Label
   .wForm form label.preField,
   .wForm form label.postField {
-    color: $label-color !important;
-    display: inline-block !important;
-    font-weight: $bold !important;
-    font-size: 18px !important;
-    margin-bottom: 16px !important;
-    text-transform: none !important;
-    position: relative !important;
-    padding: 0 !important;
+    color: $label-color;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: $bold;
+    margin-bottom: 12px;
+    padding: 0;
+    position: relative;
+    text-transform: none;
 
     &.reqMark::after {
-      color: $error-color !important;
-      content: ' *' !important;
-      font-weight: $normal !important;
+      color: $error-color;
+      content: ' *';
+      font-weight: $normal;
     }
   }
 
   // Input wrapper
   .wForm form .inputWrapper {
-    display: block !important;
+    display: block;
+  }
+
+  // Error border
+  .wForm form .errFld input[type=text] {
+    @include transition(border 0.1s,box-shadow 0.2s);
+    border: 3px solid $error-color;
+    box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
   }
 
   // Text input
   .wForm form input[type=text] {
-    background-color: $white !important;
-    background-image: none !important;
-    border: 1px solid $input-border-color !important;
-    color: $black !important;
-    display: block !important;
-    font-size: 21px !important;
-    font-weight: bold !important;
-    padding: 1rem !important;
-    outline: none !important;
-    width: 100% !important;
-    @include transition(box-shadow 0.2s);
-    @include transition(border 0.1s);
+    @include transition(border 0.1s,box-shadow 0.2s);
+    background-color: $white;
+    background-image: none;
+    border: 1px solid $input-border-color;
+    color: $black;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
 
     @include placeholder {
-      font-family: $roboto !important;
-      font-size: 18px !important;
-      font-weight: $bold !important;
+      font-family: $roboto;
+      font-size: 18px;
+      font-weight: $bold;
     }
 
     //&:hover,
     &:focus {
-      border: 3px solid $active-input-border-color !important;
-      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s);
-      @include transition(border 0.1s);
+      @include transition(border 0.1s,box-shadow 0.2s);
+      border: 3px solid $active-input-border-color;
+      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
     }
   }
 
+
   // Checkboxes
   .wForm form .oneChoice.checkbox {
-    display: block !important;
-    margin-bottom: 8px !important;
-    margin-top: 8px !important;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
 
     label.postField {
-      padding-left: 32px !important;
-      position: relative !important;
+      padding-left: 32px;
+      position: relative;
 
       &::before {
-        background: $white !important;
-        border: 2px solid $input-border-color !important;
-        content: '' !important;
-        display: block !important;
-        left: 0 !important;
-        height: 22px !important;
-        padding: 0.05rem !important;
-        position: absolute !important;
-        top: -0.25rem !important;
-        width: 22px !important;
+        background: $white;
+        border: 2px solid $input-border-color;
+        content: '';
+        display: block;
+        height: 22px;
+        left: 0;
+        padding: 0.05rem;
+        position: absolute;
+        top: -0.25rem;
+        width: 22px;
       }
     }
     input[type="checkbox"] {
-      display: none !important;
+      display: none;
 
       &:checked + label:before {
-        border: rem(2) solid $action-color !important;
-        background: $white url('../img/checkbox-bg.png') center center no-repeat !important;
+        background: $white url('../img/checkbox-bg.png') center center no-repeat;
+        border: rem(2) solid $action-color;
       }
     }
   }
 
   // Radio buttons
   .wForm form .oneChoice.radio {
-    display: block !important;
-    margin-bottom: 0.5rem !important;
-    margin-top: 0.5rem !important;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 
     label.postField {
-      padding-left: 2.2rem !important;
-      position: relative !important;
+      padding-left: 2.2rem;
+      position: relative;
 
       &::before {
-        background: $white !important;
-        border: rem(2) solid $input-border-color !important;
-        border-radius: 50% !important;
-        content: '' !important;
-        display: block !important;
-        left: 0 !important;
-        height: rem(22) !important;
-        padding: 0.05rem !important;
-        position: absolute !important;
-        top: -0.25rem !important;
-        width: rem(23) !important;
+        background: $white;
+        border-radius: 50%;
+        border: rem(2) solid $input-border-color;
+        content: '';
+        display: block;
+        height: rem(22);
+        left: 0;
+        padding: 0.05rem;
+        position: absolute;
+        top: -0.25rem;
+        width: rem(23);
       }
     }
 
     input[type="radio"] {
-      display: none !important;
+      display: none;
 
       &:checked + label:before {
-        background: $action-color !important;
-        background: $white url('../img/radio-bg.png') center center no-repeat !important;
+        background: $action-color;
+        background: $white url('../img/radio-bg.png') center center no-repeat;
       }
     }
   }
 
   // Radio buttons - button style
   .wForm form .oneChoice.radio.button-style {
-    display: inline-block !important;
-    margin-bottom: 0.5rem !important;
-    margin-top: 0.5rem !important;
-    margin-right: 2% !important;
-    width: 23% !important;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-right: 2%;
+    margin-top: 0.5rem;
+    width: 23%;
 
     &.last {
-      margin-right: 0 !important;
+      margin-right: 0;
     }
 
     label.postField {
-      background: $radio-inactive !important;
-      display: inline-block !important;
-      color: $white !important;
-      border-radius: rem(8) !important;
-      margin-right: 1rem !important;
-      padding: 1rem 0 !important;
-      text-align: center !important;
-      width: 100% !important;
       @include transition(0.2s background);
+      background: $radio-inactive;
+      border-radius: rem(8);
+      color: $white;
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 1rem 0;
+      text-align: center;
+      width: 100%;
 
       &:hover {
-        background: $radio-active !important;
         @include transition(0.2s background);
+        background: $radio-active;
       }
 
       &::before {
-        display: none !important;
+        display: none;
       }
     }
 
     input[type="radio"] {
-      visibility: hidden !important;
+      visibility: hidden;
 
       &:checked + label {
-        background: $radio-active !important;
+        background: $radio-active;
       }
     }
   }
 
-
   // Text area
   .wForm form textarea {
-    background: $white !important;
-    border: rem(1) solid $input-border-color !important;
-    color: $black !important;
-    display: block !important;
-    font-size: rem(21) !important;
-    font-weight: bold !important;
-    padding: 1rem !important;
-    outline: none !important;
-    width: 100% !important;
-    @include transition(box-shadow 0.2s);
-    @include transition(border 0.1s);
+    @include transition(border 0.1s,box-shadow 0.2s);
+    background: $white;
+    border: rem(1) solid $input-border-color;
+    color: $black;
+    display: block;
+    font-size: rem(21);
+    font-weight: bold;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
 
     @include placeholder {
-      font-size: rem(18) !important;
-      font-weight: $bold !important;
+      font-size: rem(18);
+      font-weight: $bold;
     }
 
     &:hover,
     &:focus {
-      border: 3px solid $active-input-border-color !important;
-      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s);
-      @include transition(border 0.1s);
+      @include transition(border 0.1s,box-shadow 0.2s);
+      border: 3px solid $active-input-border-color;
+      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
     }
+  }
+
+  .errFld .selectWrapper {
+    @include transition(border 0.1s,box-shadow 0.2s);
+    border: 3px solid $error-color;
+    box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
   }
 
   // Select
   .selectWrapper {
-    background: $white url('../img/select-arrow.png') calc(100% - 1rem) center no-repeat !important;
-    border: rem(1) solid $input-border-color !important;
-    position: relative !important;
+    background: $white url('../img/select-arrow.png') calc(100% - 1rem) center no-repeat;
+    border: rem(1) solid $input-border-color;
+    position: relative;
 
     &:hover {
-      border: 3px solid $active-input-border-color !important;
-      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50) !important;
-      @include transition(box-shadow 0.2s);
-      @include transition(border 0.1s);
+      @include transition(border 0.1s,box-shadow 0.2s);
+      border: 3px solid $active-input-border-color;
+      box-shadow: 0px 2px 4px 0px rgba($shadow-color,0.50);
     }
 
     select {
-      background: transparent !important;
-      border: none !important;
-      color: $black !important;
-      font-size: rem(18) !important;
-      font-weight: $bold !important;
-      width: 100% !important;
-      padding: 1.125rem 1rem !important;
-      outline: none !important;
+      background: transparent;
+      border: none;
+      color: $black;
+      font-size: rem(18);
+      font-weight: $bold;
+      outline: none;
+      padding: 1.125rem 1rem;
+      width: 100%;
       @include appearance(none);
 
       &:hover {
-        padding-right: 0.5rem !important;
+        padding-right: 0.5rem;
       }
     }
   }
 
   // Duplicate response
   .wForm form .duplicateSpan {
-    text-align: center !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 2rem;
+    text-align: center;
 
     a {
-      background: url('../img/plus-icon.png') left center no-repeat !important;
-      font-size: rem(18) !important;
-      font-weight: $bold !important;
-      text-decoration: none !important;
-      display: inline-block !important;
-      padding-left: 2rem !important;
-      padding-top: 0.25rem !important;
-      height: rem(24) !important;
-      vertical-align: bottom !important;
+      background: url('../img/plus-icon.png') left center no-repeat;
+      display: inline-block;
+      font-size: rem(18);
+      font-weight: $bold;
+      height: rem(24);
+      padding-left: 2rem;
+      padding-top: 0.25rem;
+      text-decoration: none;
+      vertical-align: bottom;
     }
   }
 
   .wForm form .removeable {
-    text-align: right !important;
+    text-align: right;
 
     a {
-      color: $help-text-color !important;
-      font-weight: $bold !important;
-      text-decoration: none !important;
+      color: $help-text-color;
+      font-weight: $bold;
+      text-decoration: none;
     }
   }
 
   // Submit button
   .wForm form input[type=submit] {
-    background: $action-color !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    color: $white !important; // override for "please wait" button
-    cursor: pointer !important;
-    display: block !important;
-    font-size: rem(22) !important;
-    font-weight: $bold !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: rem(206) !important;
-    height: rem(66) !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    vertical-align: middle !important;
     @include transition(0.2s background);
+    background: $action-color;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    color: $white; // override for "please wait" button
+    cursor: pointer;
+    display: block;
+    font-size: rem(22);
+    font-weight: $bold;
+    height: rem(66);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: rem(206);
 
     &:hover {
-      background: $action-hover-color !important;
       @include transition(0.2s background);
+      background: $action-hover-color;
     }
   }
 
   // Errors
-  .wForm form form .errFld {
-    border: none !important;
+  .wForm form .errFld {
+    border: none;
   }
 
-  .wForm form form .errMsg {
-    font-family: $roboto !important;
-    font-size: rem(14) !important;
-    font-style: italic !important;
-    margin-top: 0.5rem !important;
+  .wForm form .errMsg {
+    font-family: $roboto;
+    font-size: rem(14);
+    font-style: italic;
+    margin-top: 0.5rem;
   }
 
   // Support text
   .supportInfo {
-    background: $form-bg-color !important;
-    margin: 0 !important;
-    padding: 0 0 3rem 0 !important;
-    text-align: center !important;
+    background: $form-bg-color;
+    margin: 0;
+    padding: 0 0 3rem 0;
+    text-align: center;
 
     a {
-      color: $help-text-color !important;
-      font-size: rem(17) !important;
-      font-style: italic !important;
-      text-decoration: none !important;
+      color: $help-text-color;
+      font-size: rem(17);
+      font-style: italic;
+      text-decoration: none;
 
       &:hover {
-        text-decoration: underline !important;
+        text-decoration: underline;
       }
     }
   }
 
   // Charter logo
   .charter-logo {
-    text-align: center !important;
-    margin-top: 4rem !important;
+    margin-top: 4rem;
+    text-align: center;
 
     img {
-      height: auto !important;
-      width: 273px !important;
+      height: auto;
+      width: 273px;
     }
   }
 
   // Help text
   .wForm form .field-hint {
-    background: none !important;
-    color: $field-hint-color !important;
-    font-size: rem(15) !important;
-    font-weight: $normal !important;
+    background: none;
+    color: $field-hint-color;
+    font-size: rem(15);
+    font-weight: $normal;
   }
 
 
   // Dollar sign text field
   .wForm form input[type=text].dollar-field {
-    background: url('../img/dollar-field-bg.png') 1rem center no-repeat !important;
-    padding-left: 2.2rem !important;
+    background: url('../img/dollar-field-bg.png') 1rem center no-repeat;
+    padding-left: 2.2rem;
   }
 
 } // end embedded-form-wrapper
