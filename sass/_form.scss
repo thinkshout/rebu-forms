@@ -295,6 +295,15 @@
     }
   }
 
+  .wForm form .disclaimer {
+    font-size: rem(14);
+    font-style: $italic;
+    max-width: 80%;
+    margin: rem(10) auto;
+    text-align: center;
+  }
+
+
   // Submit button
   .wForm form input[type=submit] {
     @include transition(0.2s background);
