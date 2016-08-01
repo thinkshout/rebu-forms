@@ -1,6 +1,13 @@
 #embedded-form-wrapper {
   $em-base: 16px;
 
+  h1 {
+    &::before,
+    &:after {
+      display:none;
+    }
+  }
+
   .wFormContainer {
     border: none;
     box-shadow: 0px 2px 6px 0px rgba($shadow-color,0.50);
@@ -43,7 +50,7 @@
     display: inline-block;
     font-size: 18px;
     font-weight: $bold;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     padding: 0;
     position: relative;
     text-transform: none;
@@ -61,6 +68,10 @@
   }
 
   // Error border
+  .wForm form .errFld {
+    border: none;
+  }
+
   .wForm form .errFld input[type=text] {
     @include transition(border 0.1s,box-shadow 0.2s);
     border: 3px solid $error-color;
@@ -78,7 +89,7 @@
     font-size: 21px;
     font-weight: bold;
     outline: none;
-    padding: 1rem;
+    padding: 30px 16px;
     width: 100%;
 
     @include placeholder {
@@ -124,7 +135,7 @@
 
       &:checked + label:before {
         background: $white url('../img/checkbox-bg.png') center center no-repeat;
-        border: rem(2) solid $action-color;
+        border: 2px solid $action-color;
       }
     }
   }
@@ -145,12 +156,12 @@
         border: rem(2) solid $input-border-color;
         content: '';
         display: block;
-        height: rem(22);
+        height: 22px;
         left: 0;
         padding: 0.05rem;
         position: absolute;
         top: -0.25rem;
-        width: rem(23);
+        width: 23px;
       }
     }
 
@@ -213,14 +224,14 @@
     border: rem(1) solid $input-border-color;
     color: $black;
     display: block;
-    font-size: rem(21);
+    font-size: 21px;
     font-weight: bold;
     outline: none;
     padding: 1rem;
     width: 100%;
 
     @include placeholder {
-      font-size: rem(18);
+      font-size: 18px;
       font-weight: $bold;
     }
 
@@ -254,10 +265,10 @@
       background: transparent;
       border: none;
       color: $black;
-      font-size: rem(18);
+      font-size: 18px;
       font-weight: $bold;
       outline: none;
-      padding: 1.125rem 1rem;
+      padding: 20px 16px;
       width: 100%;
       @include appearance(none);
 
@@ -337,7 +348,7 @@
 
   .wForm form .errMsg {
     font-family: $roboto;
-    font-size: rem(14);
+    font-size: 14px;
     font-style: italic;
     margin-top: 0.5rem;
   }
@@ -369,6 +380,7 @@
     img {
       height: auto;
       width: 273px;
+      min-width: 0;
     }
   }
 
@@ -383,7 +395,7 @@
 
   // Dollar sign text field
   .wForm form input[type=text].dollar-field {
-    background: url('../img/dollar-field-bg.png') 1rem center no-repeat;
+    background: url('//thinkshout.github.io/img/dollar-field-bg.png') 1rem center no-repeat;
     padding-left: 2.2rem;
   }
 
