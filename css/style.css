@@ -30,12 +30,13 @@ a {
 #embedded-form-wrapper .wForm form label.preField,
 #embedded-form-wrapper .wForm form label.postField {
   color: #545455;
-  display: inline-block;
+  display: block;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   padding: 0;
   position: relative;
+  text-align: left;
   text-transform: none; }
   #embedded-form-wrapper .wForm form label.preField.reqMark::after,
   #embedded-form-wrapper .wForm form label.postField.reqMark::after {
@@ -63,8 +64,9 @@ a {
   display: block;
   font-size: 21px;
   font-weight: bold;
+  height: auto;
   outline: none;
-  padding: 30px 16px;
+  padding: 16px;
   width: 100%; }
   #embedded-form-wrapper .wForm form input[type=text]::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
@@ -220,7 +222,7 @@ a {
     font-size: 18px;
     font-weight: 700;
     outline: none;
-    padding: 20px 16px;
+    padding: 18px 16px;
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;

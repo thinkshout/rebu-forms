@@ -47,12 +47,13 @@
   .wForm form label.preField,
   .wForm form label.postField {
     color: $label-color;
-    display: inline-block;
+    display: block;
     font-size: 18px;
     font-weight: $bold;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     padding: 0;
     position: relative;
+    text-align: left;
     text-transform: none;
 
     &.reqMark::after {
@@ -88,8 +89,9 @@
     display: block;
     font-size: 21px;
     font-weight: bold;
+    height: auto;
     outline: none;
-    padding: 30px 16px;
+    padding: 16px;
     width: 100%;
 
     @include placeholder {
@@ -268,7 +270,7 @@
       font-size: 18px;
       font-weight: $bold;
       outline: none;
-      padding: 20px 16px;
+      padding: 18px 16px;
       width: 100%;
       @include appearance(none);
 
