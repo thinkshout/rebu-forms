@@ -313,7 +313,7 @@ a {
   font-size: 0.9375rem;
   font-weight: 400; }
 #embedded-form-wrapper .wForm form input[type=text].dollar-field {
-  background: url("//thinkshout.github.io/img/dollar-field-bg.png") 1rem center no-repeat;
+  background: #FFFFFF url("//thinkshout.github.io/rebu-forms/img/dollar-field-bg.png") 1rem center no-repeat;
   padding-left: 2.2rem; }
 
 #tfa_1988-D {
