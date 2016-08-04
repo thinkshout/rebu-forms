@@ -301,7 +301,7 @@ a {
     #embedded-form-wrapper .supportInfo a:hover {
       text-decoration: underline; }
 #embedded-form-wrapper .charter-logo {
-  margin-top: 4rem;
+  padding-top: 4rem;
   text-align: center; }
   #embedded-form-wrapper .charter-logo img {
     height: auto;
