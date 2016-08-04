@@ -118,7 +118,7 @@ a {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem; }
   #embedded-form-wrapper .wForm form .oneChoice.radio label.postField {
-    padding-left: 2.2rem;
+    padding-left: 27pxti;
     position: relative; }
     #embedded-form-wrapper .wForm form .oneChoice.radio label.postField::before {
       background: #FFFFFF;
