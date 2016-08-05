@@ -253,10 +253,10 @@ a {
       font-weight: 700;
       text-decoration: none; }
   #embedded-form-wrapper .wForm form .disclaimer {
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: italic;
     max-width: 80%;
-    margin: 0.625rem auto;
+    margin: 10px auto;
     text-align: center; }
   #embedded-form-wrapper .wForm form input[type=submit] {
     -webkit-transition: 0.2s background;
