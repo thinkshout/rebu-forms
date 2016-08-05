@@ -329,13 +329,13 @@
     display: block;
     font-size: rem(22);
     font-weight: $bold;
-    height: rem(66);
+    height: 66px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    width: rem(206);
+    width: 206px;
 
     &:hover {
       @include transition(0.2s background);
