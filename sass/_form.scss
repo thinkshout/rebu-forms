@@ -41,6 +41,10 @@
 
   .wForm form .oneField {
     margin-bottom: 1.6rem;
+
+    &.repeat {
+      margin-top: 2rem;
+    }
   }
 
   // Label

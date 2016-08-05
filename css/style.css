@@ -29,6 +29,8 @@ a {
     text-align: center; }
   #embedded-form-wrapper .wForm form .oneField {
     margin-bottom: 1.6rem; }
+    #embedded-form-wrapper .wForm form .oneField.repeat {
+      margin-top: 2rem; }
   #embedded-form-wrapper .wForm form label.preField,
   #embedded-form-wrapper .wForm form label.postField {
     color: #545455;
