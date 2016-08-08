@@ -172,7 +172,7 @@
     }
 
     input[type="radio"] {
-      display: none;
+      //display: none;
 
       &:checked + label:before {
         background: $action-color;

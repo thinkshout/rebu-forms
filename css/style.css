@@ -136,11 +136,9 @@ a {
         position: absolute;
         top: -0.25rem;
         width: 23px; }
-    #embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"] {
-      display: none; }
-      #embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"]:checked + label:before {
-        background: #7AC143;
-        background: #FFFFFF url("../img/radio-bg.png") center center no-repeat; }
+    #embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"]:checked + label:before {
+      background: #7AC143;
+      background: #FFFFFF url("../img/radio-bg.png") center center no-repeat; }
   #embedded-form-wrapper .wForm form .oneChoice.radio.button-style {
     display: inline-block;
     margin-bottom: 0.5rem;
