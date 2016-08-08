@@ -241,11 +241,11 @@ a {
     #embedded-form-wrapper .wForm form .duplicateSpan a {
       background: url("../img/plus-icon.png") left center no-repeat;
       display: inline-block;
-      font-size: 1.125rem;
+      font-size: 18px;
       font-weight: 700;
-      height: 1.5rem;
-      padding-left: 2rem;
-      padding-top: 0.25rem;
+      height: 24px;
+      padding-left: 32px;
+      padding-top: 4px;
       text-decoration: none;
       vertical-align: bottom; }
   #embedded-form-wrapper .wForm form .removeable {
