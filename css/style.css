@@ -128,15 +128,15 @@ a {
       #embedded-form-wrapper .wForm form .oneChoice.radio label.postField::before {
         background: #FFFFFF;
         border-radius: 50%;
-        border: 0.125rem solid #979797;
+        border: 2px solid #979797;
         content: '';
         display: block;
-        height: 22px;
+        height: 24px;
         left: 0;
         padding: 0.05rem;
         position: absolute;
-        top: -0.25rem;
-        width: 23px; }
+        top: -4px;
+        width: 24px; }
     #embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"] {
       opacity: 0; }
       #embedded-form-wrapper .wForm form .oneChoice.radio input[type="radio"]:checked + label:before {

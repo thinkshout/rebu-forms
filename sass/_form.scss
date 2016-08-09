@@ -160,15 +160,15 @@
       &::before {
         background: $white;
         border-radius: 50%;
-        border: rem(2) solid $input-border-color;
+        border: 2px solid $input-border-color;
         content: '';
         display: block;
-        height: 22px;
+        height: 24px;
         left: 0;
         padding: 0.05rem;
         position: absolute;
-        top: -0.25rem;
-        width: 23px;
+        top: -4px;
+        width: 24px;
       }
     }
 
