@@ -155,11 +155,11 @@ a {
       -moz-transition: 0.2s background;
       transition: 0.2s background;
       background: #356443;
-      border-radius: 0.5rem;
+      border-radius: 8px;
       color: #FFFFFF;
       display: inline-block;
-      margin-right: 1rem;
-      padding: 1rem 0;
+      margin-right: 16px;
+      padding: 16px 0;
       text-align: center;
       width: 100%; }
       #embedded-form-wrapper .wForm form .oneChoice.radio.button-style label.postField:hover {
@@ -170,7 +170,8 @@ a {
       #embedded-form-wrapper .wForm form .oneChoice.radio.button-style label.postField::before {
         display: none; }
     #embedded-form-wrapper .wForm form .oneChoice.radio.button-style input[type="radio"] {
-      opacity: 0; }
+      opacity: 0;
+      background: transparent; }
       #embedded-form-wrapper .wForm form .oneChoice.radio.button-style input[type="radio"]:checked + label {
         background: #7AC143; }
   #embedded-form-wrapper .wForm form textarea {

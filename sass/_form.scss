@@ -197,11 +197,11 @@
     label.postField {
       @include transition(0.2s background);
       background: $radio-inactive;
-      border-radius: rem(8);
+      border-radius: 8px;
       color: $white;
       display: inline-block;
-      margin-right: 1rem;
-      padding: 1rem 0;
+      margin-right: 16px;
+      padding: 16px 0;
       text-align: center;
       width: 100%;
 
@@ -217,6 +217,7 @@
 
     input[type="radio"] {
       opacity: 0;
+      background: transparent;
 
       &:checked + label {
         background: $radio-active;
