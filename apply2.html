@@ -36,11 +36,12 @@
   <small class="help-text">Part Two: Tell us about your home</small>
 </h1>
 <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="tfa_0">
+  <div class="section group">
     <div id="tfa_12-D" class="oneField field-container-D     ">
-      <label id="tfa_12-L" for="tfa_12" class="label preField ">Type of Home</label><br>
+      <label id="tfa_12-L" for="tfa_12" class="label preField reqMark">Type of Home</label><br>
       <div class="inputWrapper">
         <div class="selectWrapper">
-          <select id="tfa_12" name="tfa_12" title="Type of Home" class=""><option value="">Choose from the list</option>
+          <select id="tfa_12" name="tfa_12" title="Type of Home" class="required"><option value="">Choose from the list</option>
             <option value="tfa_13" id="tfa_13" class="">Single Family</option>
             <option value="tfa_14" id="tfa_14" class="">Multi-Family</option>
             <option value="tfa_15" id="tfa_15" class="">Condo</option>
@@ -56,31 +57,43 @@
         <input type="text" id="tfa_18" name="tfa_18" value="" placeholder="YYYY" title="Year Built" class="">
       </div>
     </div>
-    <div id="tfa_19-D" class="oneField field-container-D   labelsRemoved  ">
-      <label class="preField">Homeowner Details <span class="field-hint">(Choose all that apply)</label>
-        <span id="tfa_19" class="choices vertical ">
+  </div>
+
+    <div class="section group">
+      <div id="tfa_19-D" class="oneField field-container-D   labelsRemoved  ">
+        <label class="preField">Homeowner Details <span class="field-hint">(Choose all that apply)</label>
+          <span id="tfa_19" class="choices vertical ">
+            <span class="oneChoice checkbox">
+              <input type="checkbox" value="tfa_23" class="" id="tfa_23" name="tfa_23">
+              <label class="label postField" id="tfa_23-L" for="tfa_23">I own and occupy my home.</label>
+            </span>
+          </span>
+        <span id="tfa_24" class="choices vertical ">
           <span class="oneChoice checkbox">
-            <input type="checkbox" value="tfa_23" class="" id="tfa_23" name="tfa_23">
-            <label class="label postField" id="tfa_23-L" for="tfa_23">I own and occupy my home.</label>
+            <input type="checkbox" value="tfa_25" class="" id="tfa_25" name="tfa_25">
+            <label class="label postField" id="tfa_25-L" for="tfa_25">I have homeowner's insurance.</label>
           </span>
         </span>
-      <span id="tfa_24" class="choices vertical ">
-        <span class="oneChoice checkbox">
-          <input type="checkbox" value="tfa_25" class="" id="tfa_25" name="tfa_25">
-          <label class="label postField" id="tfa_25-L" for="tfa_25">I have homeowner's insurance.</label>
+        <span id="tfa_26" class="choices vertical ">
+          <span class="oneChoice checkbox">
+            <input type="checkbox" value="tfa_27" class="" id="tfa_27" name="tfa_27">
+            <label class="label postField" id="tfa_27-L" for="tfa_27">I have no past due mortgage or tax payments.</label>
+          </span>
         </span>
-      </span>
-      <span id="tfa_26" class="choices vertical ">
-        <span class="oneChoice checkbox">
-          <input type="checkbox" value="tfa_27" class="" id="tfa_27" name="tfa_27">
-          <label class="label postField" id="tfa_27-L" for="tfa_27">I have no past due mortgage or tax payments.</label>
-        </span>
-      </span>
+      </div>
     </div>
 
-  <div id="tfa_5-D" class="oneField field-container-D     ">
-  <label id="tfa_5-L" for="tfa_5" class="label preField ">Number of Residents</label><br><div class="inputWrapper"><input type="text" id="tfa_5" name="tfa_5" value="" placeholder="" title="Number of Residents" class="validate-integer"></div>
+<div class="section group">
+  <div id="tfa_5-D" class="oneField field-container-D   ">
+    <label id="tfa_5-L" for="tfa_5" class="label preField reqMark">Number of Residents</label><br>
+    <div class="inputWrapper">
+      <input type="text" id="tfa_5" name="tfa_5" value="" placeholder="" title="Number of Residents" class="validate-integer required">
+    </div>
   </div>
+</div>
+
+<div class="section group">
+
   <div id="tfa_6-D" class="oneField field-container-D   labelsRemoved  ">
     <div class="inputWrapper">
       <label class="label preField">Tell us more about the individuals that live in your home <span class="field-hint">(Choose all that apply)</span></label>
@@ -104,10 +117,14 @@
       </span>
     </div>
   </div>
-  <div id="tfa_11-D" class="oneField field-container-D    hintsTooltip ">
-    <label id="tfa_11-L" for="tfa_11" class="label preField ">Total Gross Annual Household Income</label><br>
-    <div class="inputWrapper">
-      <input type="text" id="tfa_11" name="tfa_11" value="" placeholder="" title="Total Annual Household Income" class="dollar-field">
+</div>
+
+  <div class="section group">
+    <div id="tfa_11-D" class="oneField field-container-D    hintsTooltip ">
+      <label id="tfa_11-L" for="tfa_11" class="label preField reqMark">Total Gross Annual Household Income</label><br>
+      <div class="inputWrapper">
+        <input type="text" id="tfa_11" name="tfa_11" value="" placeholder="" title="Total Annual Household Income" class="dollar-field required">
+      </div>
     </div>
   </div>
 
