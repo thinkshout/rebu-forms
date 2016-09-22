@@ -34,12 +34,69 @@
   <small class="help-text">Part One: Tell us about yourself</small>
 </h1>
 <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="tfa_0">
+
+  <div id="tfa_2017-D" class="oneField field-container-D   labelsLeftAligned  ">
+    <label id="tfa_2017-L" for="tfa_2017" class="label preField ">I'm applying</label>
+    <div class="inputWrapper">
+      <span id="tfa_2017" class="choices horizontal ">
+        <span class="oneChoice radio">
+          <input type="radio" value="tfa_2018" class="" checked id="tfa_2018" name="tfa_2017">
+          <label class="label postField" id="tfa_2018-L" for="tfa_2018">For Myself</label>
+        </span>
+        <span class="oneChoice radio">
+          <input type="radio" value="tfa_2019" class="" id="tfa_2019" name="tfa_2017" data-conditionals="#tfa_2021,#tfa_2023,#tfa_2025,#tfa_2028">
+          <label class="label postField" id="tfa_2019-L" for="tfa_2019">For Someone Else</label>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div id="tfa_2008" class="">
+    <div id="tfa_2024" class="inline">
+      <div id="tfa_2021-D" class="oneField field-container-D     ">
+        <label id="tfa_2021-L" for="tfa_2021" class="label preField reqMark">My First Name</label><br>
+        <div class="inputWrapper">
+          <input type="text" id="tfa_2021" name="tfa_2021" value="" placeholder="" data-condition="`#tfa_2019`" title="My First Name" class="required">
+        </div>
+      </div>
+      <div id="tfa_2023-D" class="oneField field-container-D     ">
+        <label id="tfa_2023-L" for="tfa_2023" class="label preField reqMark">My Last Name</label><br>
+        <div class="inputWrapper">
+          <input type="text" id="tfa_2023" name="tfa_2023" value="" placeholder="" data-condition="`#tfa_2019`" title="My Last Name" class="required">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tfa_2009" class="section group">
+    <div id="tfa_2034" class="section inline group">
+      <div id="tfa_2025-D" class="oneField field-container-D     ">
+        <label id="tfa_2025-L" for="tfa_2025" class="label preField reqMark">My Email</label><br>
+        <div class="inputWrapper">
+          <input type="text" id="tfa_2025" name="tfa_2025" value="" placeholder="" data-condition="`#tfa_2019`" title="My Email" class="validate-email required">
+        </div>
+      </div>
+      <div id="tfa_2028-D" class="oneField field-container-D     ">
+        <label id="tfa_2028-L" for="tfa_2028" class="label preField reqMark">My Relationship to the Homeowner</label><br>
+        <div class="inputWrapper selectWrapper">
+          <select id="tfa_2028" name="tfa_2028" data-condition="`#tfa_2019`" title="My Relationship to the Homeowner" class="required">
+            <option value="">Choose from the list</option>
+            <option value="tfa_2029" id="tfa_2029" class="">Family member</option>
+            <option value="tfa_2030" id="tfa_2030" class="">Friend</option>
+            <option value="tfa_2031" id="tfa_2031" class="">Neighbor</option>
+            <option value="tfa_2032" id="tfa_2032" class="">Case worker</option>
+            <option value="tfa_2033" id="tfa_2033" class="">Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div id="tfa_2008" class="section group">
   <div id="tfa_1-D" class="oneField field-container-D     ">
-    <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">First Name&nbsp;</label><br><div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" placeholder="First Name" title="First Name " class="required"></div>
+    <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">Homeowner First Name&nbsp;</label><br><div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" placeholder="First Name" title="First Name " class="required"></div>
   </div>
   <div id="tfa_2-D" class="oneField field-container-D     ">
-    <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Last Name</label><br><div class="inputWrapper"><input type="text" id="tfa_2" name="tfa_2" value="" placeholder="Last Name" title="Last Name" class="required"></div>
+    <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Homeowner Last Name</label><br><div class="inputWrapper"><input type="text" id="tfa_2" name="tfa_2" value="" placeholder="Last Name" title="Last Name" class="required"></div>
   </div>
   <div id="tfa_1873-D" class="oneField field-container-D     ">
     <label id="tfa_1873-L" for="tfa_1873" class="label preField reqMark">Email</label><br><div class="inputWrapper"><input type="text" id="tfa_1873" name="tfa_1873" value="" placeholder="example@example.com" title="Email" class="validate-email required"></div>
@@ -138,25 +195,57 @@
 </div>
 </div>
 </div>
+
+
 <div id="tfa_2012" class="section group">
-<div id="tfa_1997-D" class="oneField field-container-D     ">
-<label id="tfa_1997-L" for="tfa_1997" class="label preField ">How did you hear about us?</label><br><div class="inputWrapper">
-<div class="selectWrapper">
-  <select id="tfa_1997" name="tfa_1997" title="How did you hear about us? " class=""><option value="">Choose one from the list</option>
-<option value="tfa_1998" id="tfa_1998" class="">Charter Communications - Email Newsletter</option>
-<option value="tfa_1999" id="tfa_1999" class="">Charter Communications - Social Media Post </option>
-<option value="tfa_2000" id="tfa_2000" class="">Charter our Community Website </option>
-<option value="tfa_2001" id="tfa_2001" class="">Rebuilding Together - Email Newsletter </option>
-<option value="tfa_2002" id="tfa_2002" class="">Rebuilding Together - Website </option>
-<option value="tfa_2003" id="tfa_2003" class="">Rebuilding Together - Social Media Post </option>
-<option value="tfa_2004" id="tfa_2004" class="">Rebuilding Together - Poster/Flyer </option>
-<option value="tfa_2005" id="tfa_2005" class="">Lowe's (Lowes.com, Social Media, etc.)</option>
-<option value="tfa_2006" id="tfa_2006" class="">Word of Mouth (friend, relative, coworker, or neighbor) </option>
-</select>
+  <div id="tfa_1997-D" class="oneField field-container-D     ">
+    <label id="tfa_1997-L" for="tfa_1997" class="label preField ">How did you hear about us?&nbsp;</label><br>
+    <div class="inputWrapper selectWrapper">
+      <select id="tfa_1997" name="tfa_1997" data-filter-dependent="#tfa_2039" title="How did you hear about us? " class="">
+        <option value="">Choose from the list</option>
+        <option value="tfa_2035" id="tfa_2035" data-conditionals="#tfa_2039" class="">Charter Communications</option>
+        <option value="tfa_2036" id="tfa_2036" data-conditionals="#tfa_2039" class="">Rebuilding Together</option>
+        <option value="tfa_2037" id="tfa_2037" class="">Search Engine</option>
+        <option value="tfa_2038" id="tfa_2038" class="">Word of Mouth (friend, relative, co-worker, or neighbor)</option>
+      </select>
+    </div>
+  </div>
 </div>
+
+<div id="tfa_2039-D" class="oneField field-container-D   labelsRemoved  ">
+  <div class="inputWrapper selectWrapper">
+    <select id="tfa_2039" name="tfa_2039" data-filter-control="#tfa_1997" data-condition="`#tfa_2035` OR `#tfa_2036`" title="Referral Detail" class="">
+      <option value="">Choose from the list</option>
+      <optgroup id="tfa_2052" label="Charter Communications" class="choiceGroup">
+        <option value="tfa_2040" id="tfa_2040" class="">Charter Community Event</option>
+        <option value="tfa_2041" id="tfa_2041" class="">CharterourCommunity.com or other Charter website</option>
+        <option value="tfa_2042" id="tfa_2042" class="">Safe &amp; Healthy Home Kit</option>
+        <option value="tfa_2043" id="tfa_2043" class="">Email Newsletter</option>
+        <option value="tfa_2044" id="tfa_2044" class="">TV Advertisement</option>
+        <option value="tfa_2045" id="tfa_2045" class="">Charter Employee</option>
+        <option value="tfa_2046" id="tfa_2046" class="">Social Media Post</option>
+        <option value="tfa_2047" id="tfa_2047" data-conditionals="#tfa_2056" class="">Other</option>
+      </optgroup>
+      <optgroup id="tfa_2053" label="Rebuilding Together" class="choiceGroup">
+        <option value="tfa_2048" id="tfa_2048" class="">Email Newsletter</option>
+        <option value="tfa_2049" id="tfa_2049" class="">Website</option>
+        <option value="tfa_2050" id="tfa_2050" class="">Social Media Post</option>
+        <option value="tfa_2051" id="tfa_2051" data-conditionals="#tfa_2056" class="">Other</option>
+      </optgroup>
+      h<optgroup id="tfa_2054" label="Search Engine" class="choiceGroup"></optgroup>
+      <optgroup id="tfa_2055" label="Word of Mouth (friend, relative, co-worker, or neighbor)" class="choiceGroup"></optgroup>
+    </select>
+  </div>
 </div>
+
+<div id="tfa_2056-D" class="oneField field-container-D     ">
+  <label id="tfa_2056-L" for="tfa_2056" class="label preField ">Other</label><br>
+  <div class="inputWrapper">
+    <input type="text" id="tfa_2056" name="tfa_2056" value="" placeholder="" data-condition="`#tfa_2047` OR `#tfa_2051`" title="Other" class="">
+  </div>
 </div>
-</div>
+
+
 <div class="actions" id="tfa_0-A"><input type="submit" class="primaryAction" value="Next"></div>
 <div style="clear:both"></div>
 <input type="hidden" value="430466" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="683b93220f323c5b31066768e971557f" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="3" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">

@@ -258,20 +258,46 @@
 
       <div class="section group">
         <div id="tfa_1931-D" class="oneField field-container-D     ">
-          <label id="tfa_1931-L" for="tfa_1931" class="label preField ">How Did You Hear About Us?</label><br>
+          <label id="tfa_1931-L" for="tfa_1931" class="label preField ">How Did You Hear About Us?&nbsp;</label><br>
           <div class="inputWrapper selectWrapper">
-            <select id="tfa_1931" name="tfa_1931" title="How Did You Hear About Us? " class="">
+            <select id="tfa_1931" name="tfa_1931" data-filter-dependent="#tfa_2261" title="How Did You Hear About Us? " class="">
               <option value="">Choose from the list</option>
-              <option value="tfa_1932" id="tfa_1932" class="">Charter Communications - Email Newsletter</option>
-              <option value="tfa_1933" id="tfa_1933" class="">Charter Communications - Social Media Post</option>
-              <option value="tfa_1934" id="tfa_1934" class="">Charter our Community Website</option>
-              <option value="tfa_1935" id="tfa_1935" class="">Rebuilding Together - Email Newsletter</option>
-              <option value="tfa_1936" id="tfa_1936" class="">Rebuilding Together - Website</option>
-              <option value="tfa_1937" id="tfa_1937" class="">Rebuilding Together - Social Media Post</option>
-              <option value="tfa_1938" id="tfa_1938" class="">Rebuilding Together - Poster/Flyer</option>
-              <option value="tfa_1939" id="tfa_1939" class="">Lowe's (Lowes.com, Social Media, etc.)</option>
+              <option value="tfa_1932" id="tfa_1932" data-conditionals="#tfa_2261" class="">Charter Communications</option>
+              <option value="tfa_1938" id="tfa_1938" data-conditionals="#tfa_2261" class="">Rebuilding Together</option>
+              <option value="tfa_2260" id="tfa_2260" class="">Search Engine</option>
               <option value="tfa_1940" id="tfa_1940" class="">Word of Mouth (friend, relative, coworker, or neighbor)</option>
             </select>
+          </div>
+        </div>
+        <div id="tfa_2261-D" class="oneField field-container-D   labelsRemoved  ">
+          <div class="inputWrapper selectWrapper">
+            <select id="tfa_2261" name="tfa_2261" data-filter-control="#tfa_1931" data-condition="`#tfa_1932` OR `#tfa_1938`" title="Referral Detail" class="">
+              <option value="">Choose from the list</option>
+                <optgroup id="tfa_2274" label="Charter Communications" class="choiceGroup">
+                  <option value="tfa_2262" id="tfa_2262" class="">Charter Community Event</option>
+                  <option value="tfa_2263" id="tfa_2263" class="">CharterourCommunity.com or other Charter website</option>
+                  <option value="tfa_2264" id="tfa_2264" class="">Safe &amp; Healthy Home Kit</option>
+                  <option value="tfa_2265" id="tfa_2265" class="">Email Newsletter</option>
+                  <option value="tfa_2266" id="tfa_2266" class="">TV Advertisement</option>
+                  <option value="tfa_2267" id="tfa_2267" class="">Charter Employee</option>
+                  <option value="tfa_2268" id="tfa_2268" class="">Social Media Post</option>
+                  <option value="tfa_2269" id="tfa_2269" data-conditionals="#tfa_2278" class="">Other</option>
+                </optgroup>
+                <optgroup id="tfa_2275" label="Rebuilding Together" class="choiceGroup">
+                  <option value="tfa_2270" id="tfa_2270" class="">Email Newsletter</option>
+                  <option value="tfa_2271" id="tfa_2271" class="">Website</option>
+                  <option value="tfa_2272" id="tfa_2272" class="">Social Media Post</option>
+                  <option value="tfa_2273" id="tfa_2273" data-conditionals="#tfa_2278" class="">Other</option>
+                </optgroup>
+                <optgroup id="tfa_2276" label="Search Engine" class="choiceGroup"></optgroup>
+                <optgroup id="tfa_2277" label="Word of Mouth (friend, relative, coworker, or neighbor)" class="choiceGroup"></optgroup>
+            </select>
+          </div>
+        </div>
+        <div id="tfa_2278-D" class="oneField field-container-D     ">
+          <label id="tfa_2278-L" for="tfa_2278" class="label preField ">Other</label><br>
+          <div class="inputWrapper">
+            <input type="text" id="tfa_2278" name="tfa_2278" value="" placeholder="" data-condition="`#tfa_2269` OR `#tfa_2273`" title="Other" class="">
           </div>
         </div>
       </div><!-- section group -->
