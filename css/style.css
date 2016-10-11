@@ -306,7 +306,7 @@ a {
       text-decoration: none; }
       #embedded-form-wrapper .supportInfo a:hover {
         text-decoration: underline; }
-  #embedded-form-wrapper .iats-logo {
+  #embedded-form-wrapper .iats-logo img {
     min-width: none;
     max-width: none; }
   #embedded-form-wrapper .charter-logo {
