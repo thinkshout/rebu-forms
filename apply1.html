@@ -199,9 +199,9 @@
 
 <div id="tfa_2012" class="section group">
   <div id="tfa_1997-D" class="oneField field-container-D     ">
-    <label id="tfa_1997-L" for="tfa_1997" class="label preField ">How did you hear about us?&nbsp;</label><br>
+    <label id="tfa_1997-L" for="tfa_1997" class="label preField reqMark">How did you hear about us?&nbsp;</label><br>
     <div class="inputWrapper selectWrapper">
-      <select id="tfa_1997" name="tfa_1997" data-filter-dependent="#tfa_2039" title="How did you hear about us? " class="">
+      <select id="tfa_1997" name="tfa_1997" data-filter-dependent="#tfa_2039" title="How did you hear about us? " class="required">
         <option value="">Choose from the list</option>
         <option value="tfa_2035" id="tfa_2035" data-conditionals="#tfa_2039" class="">Charter Communications</option>
         <option value="tfa_2036" id="tfa_2036" data-conditionals="#tfa_2039" class="">Rebuilding Together</option>
@@ -214,7 +214,7 @@
 
 <div id="tfa_2039-D" class="oneField field-container-D   labelsRemoved  ">
   <div class="inputWrapper selectWrapper">
-    <select id="tfa_2039" name="tfa_2039" data-filter-control="#tfa_1997" data-condition="`#tfa_2035` OR `#tfa_2036`" title="Referral Detail" class="">
+    <select id="tfa_2039" name="tfa_2039" data-filter-control="#tfa_1997" data-condition="`#tfa_2035` OR `#tfa_2036`" title="Referral Detail" class="required">
       <option value="">Choose from the list</option>
       <optgroup id="tfa_2052" label="Charter Communications" class="choiceGroup">
         <option value="tfa_2040" id="tfa_2040" class="">Charter Community Event</option>
@@ -232,16 +232,16 @@
         <option value="tfa_2050" id="tfa_2050" class="">Social Media Post</option>
         <option value="tfa_2051" id="tfa_2051" data-conditionals="#tfa_2056" class="">Other</option>
       </optgroup>
-      h<optgroup id="tfa_2054" label="Search Engine" class="choiceGroup"></optgroup>
+      <optgroup id="tfa_2054" label="Search Engine" class="choiceGroup"></optgroup>
       <optgroup id="tfa_2055" label="Word of Mouth (friend, relative, co-worker, or neighbor)" class="choiceGroup"></optgroup>
     </select>
   </div>
 </div>
 
 <div id="tfa_2056-D" class="oneField field-container-D     ">
-  <label id="tfa_2056-L" for="tfa_2056" class="label preField ">Other</label><br>
+  <label id="tfa_2056-L" for="tfa_2056" class="label preField reqMark">Other</label><br>
   <div class="inputWrapper">
-    <input type="text" id="tfa_2056" name="tfa_2056" value="" placeholder="" data-condition="`#tfa_2047` OR `#tfa_2051`" title="Other" class="">
+    <input type="text" id="tfa_2056" name="tfa_2056" value="" placeholder="" data-condition="`#tfa_2047` OR `#tfa_2051`" title="Other" class="required">
   </div>
 </div>
 
