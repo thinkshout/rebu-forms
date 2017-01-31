@@ -12,6 +12,31 @@
     <!--[if IE 6]>
     <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-layout-ie6.css" rel="stylesheet" type="text/css" />
     <![endif]-->
+    <head>
+    <style>
+      .captcha { padding-bottom: 1rem !important; } 
+      .g-recaptcha > div { margin: 0 auto; }
+      .captcha .oneField { margin-bottom: 0 !important; }
+      .captchaHelp { margin-bottom: 1rem; text-align: center; }
+    </style>
+      <script type="text/javascript">
+        var onloadCallback = function () {
+          grecaptcha.render('g-recaptcha-render-div', {
+            'sitekey': '6Lf5FgwUAAAAAOPh5TJiK6qXfS_VBH6-iSj9GmOs',
+            'theme': 'light',
+            'size': 'normal'
+          });
+          var standardCaptcha = document.getElementById("tfa_captcha_text");
+          standardCaptcha = standardCaptcha.parentNode.parentNode.parentNode;
+          standardCaptcha.parentNode.removeChild(standardCaptcha);
+          document.getElementById("g-recaptcha-render-div").parentNode.parentNode.parentNode.style.display = "block";
+          document.getElementById("g-recaptcha-render-div").parentNode.parentNode.parentNode.removeAttribute("hidden");
+          document.getElementById("g-recaptcha-render-div").getAttributeNode('id').value = 'tfa_captcha_text';
+
+        };
+      </script>
+      <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    </head>
 
     <link href="https://www.tfaforms.com/themes/get/default" rel="stylesheet" type="text/css" />
     <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-jsonly.css" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
@@ -305,7 +330,37 @@
       <div id="tfa_2259" class="section inline group">
         <input type="hidden" id="tfa_2246" name="tfa_2246" value="" class='formula=if(AMOUNT=="Other"){OTHER}else{AMOUNT} calc-PAYAMOUNT'><input type="hidden" id="tfa_2248" name="tfa_2248" value="" class='formula=if(FREQUENCY=="2"){PAYAMOUNT}else{"0"}'><input type="hidden" id="tfa_2250" name="tfa_2250" value="" class='formula=if(FREQUENCY=="1"){"1"}else{"0"}'><input type="hidden" id="IATS_TOKEN_141571" name="IATS_TOKEN_141571" value="" class=""><input type="hidden" id="IATS_TRANS_ID_141571" name="IATS_TRANS_ID_141571" value="" class=""><input type="hidden" id="IATS_SUBSCR_TOKENS_141571" name="IATS_SUBSCR_TOKENS_141571" value="" class=""><input type="hidden" id="IATS_SUBSCR_TRANS_IDS_141571" name="IATS_SUBSCR_TRANS_IDS_141571" value="" class=""><input type="hidden" id="IATS_TOKEN_141582" name="IATS_TOKEN_141582" value="" class=""><input type="hidden" id="IATS_TRANS_ID_141582" name="IATS_TRANS_ID_141582" value="" class=""><input type="hidden" id="IATS_SUBSCR_TOKENS_141582" name="IATS_SUBSCR_TOKENS_141582" value="" class=""><input type="hidden" id="IATS_SUBSCR_TRANS_IDS_141582" name="IATS_SUBSCR_TRANS_IDS_141582" value="" class="">
       </div>
-      <div class="actions" id="tfa_0-A"><input type="submit" class="primaryAction" value="Submit"></div>
+
+
+
+      <div class="actions" id="tfa_0-A">
+        <div id="captcha"><!-- fallback captcha -->
+          <fieldset class="captcha">
+            <legend>Captcha</legend>
+            <p class="instructions">Please enter the characters you see in this picture:</p>
+            <div class="oneField">
+              <img src="https://www.tfaforms.com/forms/captcha" width="200" height="60" alt="Visual CAPTCHA"><br>
+              <label class="preField" for="tfa_captcha_text">Characters</label> 
+              <input type="text" name="tfa_captcha_text" id="tfa_captcha_text"><br>
+            </div>
+            <div class="captchaHelp">This helps prevent automated form submissions. If you are not sure what the characters are, make your best guess. You will have another try in the next screen.<br>Can't see the image? <a href="https://www.tfaforms.com/forms/captcha/1">Click here for an audible version in English.</a>
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="google-captcha" style="display: none"><br><!-- Google captcha -->
+          <div class="captcha">
+            <div class="oneField">
+              <div class="g-recaptcha" id="g-recaptcha-render-div"></div>
+              <div class="g-captcha-error"></div><br>
+            </div>
+            <div class="captchaHelp">This helps prevent automated form submissions. Complete it to the best of your ability.<br>
+            </div>
+          </div>
+        </div>
+        
+        <input type="submit" class="primaryAction" value="Submit">
+      </div>
       <div style="clear:both"></div>
       <input type="hidden" value="431868" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="8f5c83d889efb2b0d881155c0d08e3f7" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="38" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
     </form>
